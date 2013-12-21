@@ -1,0 +1,11165 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Importing external fonts*/
+/**********************************************
+Metamucil
+***********************************************/
+	/*Olivea Light*/
+@font-face
+{
+	font-family: OliveaLight ;
+	src: url(../fonts/Metamucil/olivea_light.eot) ;
+	src: url(../fonts/Metamucil/olivea_light.otf) , url(../fonts/Metamucil/olivea_light.svg) , url(../fonts/Metamucil/olivea_light.ttf) , url(../fonts/Metamucil/olivea_light.woff)  ;
+}
+
+	/*Olivea Bold*/
+@font-face
+{
+	font-family: OliveaBold ;
+	src: url(../fonts/Metamucil/olivea_bold.eot) ;
+	src: url(../fonts/Metamucil/olivea_bold.otf) , url(../fonts/Metamucil/olivea_bold.svg) , url(../fonts/Metamucil/olivea_bold.ttf) , url(../fonts/Metamucil/olivea_bold.woff)  ;
+}
+
+/**********************************************
+Clearblue
+***********************************************/
+	/*Helvetica Neue 45 Light*/
+@font-face
+{
+	font-family: HelveticaLight ;
+	src: url(../fonts/Clearblue/HelveticaLight.eot) , url(../fonts/Clearblue/HelveticaLight.otf) , url(../fonts/Clearblue/HelveticaLight.svg) , url(../fonts/Clearblue/HelveticaLight.ttf) , url(../fonts/Clearblue/HelveticaLight.woff)  ;
+}
+
+	/*Helvetica Neue 75 Bold*/
+@font-face
+{
+	font-family: HelveticaBold ;
+	src: url(../fonts/Clearblue/HelveticaBold.eot) , url(../fonts/Clearblue/HelveticaBold.otf) , url(../fonts/Clearblue/HelveticaBold.svg) , url(../fonts/Clearblue/HelveticaBold.ttf) , url(../fonts/Clearblue/HelveticaBold.woff)  ;
+}
+
+/**********************************************
+Pepto-Bismol
+***********************************************/
+	/*Helvetica Round*/
+@font-face
+{
+	font-family: HelveticaRounded ;
+	src: url(../fonts/PeptoBismol/HelveticaRdBd.eot) , url(../fonts/PeptoBismol/HelveticaRdBd.otf) , url(../fonts/PeptoBismol/HelveticaRdBd.svg) , url(../fonts/PeptoBismol/HelveticaRdBd.ttf) , url(../fonts/PeptoBismol/HelveticaRdBd.woff)  ;
+}
+
+	/*Futura Book*/
+@font-face
+{
+	font-family: FuturaBook ;
+	src: url(../fonts/PeptoBismol/FuturaBook.eot) , url(../fonts/PeptoBismol/FuturaBook.otf) , url(../fonts/PeptoBismol/FuturaBook.svg) , url(../fonts/PeptoBismol/FuturaBook.ttf) , url(../fonts/PeptoBismol/FuturaBook.woff)  ;
+}
+
+	/*Futura Bold*/
+@font-face
+{
+	font-family: FuturaBold ;
+	src: url(../fonts/PeptoBismol/FuturaBold.eot) , url(../fonts/PeptoBismol/FuturaBold.otf) , url(../fonts/PeptoBismol/FuturaBold.svg) , url(../fonts/Clearblue/PeptoBismol.ttf) , url(../fonts/PeptoBismol/FuturaBold.woff)  ;
+}
+
+/**********************************************
+Vicks
+***********************************************/
+	/*Helvetica Round*/
+@font-face
+{
+	font-family: HelveticaLight ;
+	src: url(../fonts/PeptoBismol/HelveticaRdBd.eot) , url(../fonts/PeptoBismol/HelveticaRdBd.otf) , url(../fonts/PeptoBismol/HelveticaRdBd.svg) , url(../fonts/PeptoBismol/HelveticaRdBd.ttf) , url(../fonts/PeptoBismol/HelveticaRdBd.woff)  ;
+}
+
+	/*Futura Book*/
+@font-face
+{
+	font-family: FuturaBook ;
+	src: url(../fonts/PeptoBismol/FuturaBook.eot) , url(../fonts/PeptoBismol/FuturaBook.otf) , url(../fonts/PeptoBismol/FuturaBook.svg) , url(../fonts/PeptoBismol/FuturaBook.ttf) , url(../fonts/PeptoBismol/FuturaBook.woff)  ;
+}
+
+	/*Futura Bold*/
+@font-face
+{
+	font-family: FuturaBold ;
+	src: url(../fonts/PeptoBismol/FuturaBold.eot) , url(../fonts/PeptoBismol/FuturaBold.otf) , url(../fonts/PeptoBismol/FuturaBold.svg) , url(../fonts/Clearblue/PeptoBismol.ttf) , url(../fonts/PeptoBismol/FuturaBold.woff)  ;
+}
+
+/**********************************************
+Hipoglos
+***********************************************/
+	/*VAG Rounded Bold*/
+@font-face
+{
+	font-family: VAGRoundedBold ;
+	src: url(../fonts/Hipoglos/VAGRoundedBold.eot) , url(../fonts/Hipoglos/VAGRoundedBold.svg), url(../fonts/Hipoglos/VAGRoundedBold.ttf) , url(../fonts/Hipoglos/VAGRoundedBold.woff) ;
+}
+
+	/*VAG Rounded Light*/
+@font-face
+{
+	font-family: VAGRoundedLight ;
+	src: url(../fonts/Hipoglos/VAGRoundedLight.eot) , url(../fonts/Hipoglos/VAGRoundedLight.svg) , url(../fonts/Hipoglos/VAGRoundedLight.ttf) , url(../fonts/Hipoglos/VAGRoundedLight.woff)  ;
+}
+
+/**********************************************
+All elememnts adjustments
+***********************************************/
+*
+{
+	margin: 0px ;
+	padding: 0px ;
+	
+	box-sizing: border-box ;
+	-moz-box-sizing: border-box ;
+	
+	border: none ;
+	
+	font-family: FuturaBook ;
+	font-size: 1em ;
+	color: #002855 ;
+}
+
+/*Body adjustments*/
+body
+{	
+	margin: 0px ;
+	padding: 0px ;
+	
+	/*background: rgba(14,18,54 ,1) ;*/
+	background-image: url(../img/img_back_parhamLatam.png) ;
+	background-size: cover ;
+		
+	overflow: hidden ;
+}
+
+/**********************************************
+General Adjustments
+***********************************************/
+/*PageWrap*/
+.PageWrap
+{
+	position: absolute ;
+	
+	width: 1280px ;
+	height: 960px ;
+	
+	left: 50% ;
+	margin-left: -640px ;
+	
+	top: 50% ;
+	margin-top: -480px ;
+	
+	overflow: hidden ;
+	
+	/*Inner Shadow*/
+	box-shadow: 0px 0px 20px rgba(0,0,0,.25) ;
+	-moz-box-shadow: 0px 0px 20px rgba(0,0,0,.25) ;
+	-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.25) ;
+	
+	z-index: 1 ;
+}
+
+/*Main Container*/
+.Container
+{
+	position: absolute ;
+	
+	top: 0px ;
+	left: 0px ;
+			
+	width: 1280px ;
+	height: 960px ;
+		
+	overflow: hidden ;
+	
+	opacity: 1 ;
+	
+	z-index: 2 ;
+}
+
+/*BackGradient*/
+.backGradient
+{
+	position: absolute ;
+	
+	top: 0px ;
+	left: 0px ;
+	
+	width: 100% ;
+	height: 100% ;
+	
+	opacity: 1 ;
+	
+	overflow: hidden ;
+}
+
+/*BackGradient*/
+.backGradient img
+{
+	width: 100% ;
+	height: 100% ;
+}
+
+/*General Background*/
+.generalBackground
+{
+	position: absolute ;
+	
+	top: 0px ;
+	left: 0px ;
+	
+	width: 100% ;
+	height: 100% ;
+	
+	z-index: -1 ;
+}
+
+/*FullSection*/
+.fullSection
+{
+	position: absolute ;
+	
+	width: 100% ;
+	height: auto ;
+}
+
+/*Video Container*/
+.videoContainer
+{
+	position: absolute ;
+	
+	top: 160px ;
+	left: 75px ;
+		
+	width: 1130px ;
+	height: 660px ;
+	
+	overflow: hidden ;
+}
+
+	/*Video Screen*/
+.videoScreen
+{
+	position: absolute ;
+
+	top: 0px ;
+	left: 20px ;
+	
+	width: 1090px ;
+	height: 614px ;
+	
+	background-image: url(../img/img_backVideo.png) ;
+	background-position: top ;
+	background-size: cover ;
+	background-repeat: no-repeat ;
+}
+
+	/*Video Shadow*/
+.videoShadow
+{
+	position: absolute ;
+
+	width: 1090px ;
+	
+	bottom: 0px ;
+	left: 0px ;
+	
+	opacity: .5 ;
+	
+	z-index: -1 ;
+}
+
+/**********************************************
+All Slides Elements
+***********************************************/
+/*Highly Restricted*/
+.Restricted
+{
+	position: absolute ;
+	
+	bottom: 20px;
+	left: 540px ;
+	
+	width: 200px ;
+	
+	font-family: HelveticaBold ;
+	font-size: .75em ;
+	
+	text-align: center ;
+	
+	text-transform: uppercase ;
+	text-shadow: 0px 0px 5px #000066 ;
+	-moz-text-shadow: 0px 0px 5px #000066 ;
+	-webkit-text-shadow: 0px 0px 5px #000066 ;
+	
+	color: #FFF ;
+		
+	z-index: 20 ;
+}
+
+/*Slide Number*/
+.slideNumber
+{
+	position: absolute ;
+	
+	bottom: 5px ;
+	left: 540px ;
+	
+	width: 200px ;
+	
+	font-family: HelveticaLight ;
+	font-size: .85em ;
+	color: #FFF ;
+	
+	text-align: center ;
+	
+	text-shadow: 0px 0px 2px #000000 ;
+	-moz-text-shadow: 0px 0px 2px #000000 ;
+	-webkit-text-shadow: 0px 0px 2px #000000 ;
+	
+	z-index: 20 ;
+}
+
+/*Menu Caller*/
+.MenuCaller
+{
+	position: absolute ;
+	
+	bottom: 15px ;
+	left: 20px ;
+	
+	z-index: -1 ;
+	display: none ;
+}
+
+	/*Menu Content*/
+.contextualMenu
+{
+	position: absolute ;
+	
+	width: 700px ;
+	
+	/*bottom: -100px ;*/
+	bottom: 5px ;
+	left: 10px ;
+
+	z-index: 20 ;
+}
+
+		/*Menu Content | ul li*/
+.contextualMenu ul , li
+{
+	display: inline ;
+	
+	z-index: 20 ;
+}
+
+/*Logo Pharma*/
+.topLogoPharma
+{
+	position: absolute ;
+	
+	top: 20px ;
+	left: 20px ;
+	
+	z-index: 20 ;
+}
+
+/*Top Line*/
+.topLine
+{
+	position: absolute ;
+	
+	top: 80px ;
+	left: 300px ;
+	
+	z-index: 20 ;
+}
+
+/*Top Logos No language*/
+.topMultipleLogos_noLanguage
+{
+	position: absolute ;
+	
+	top: 30px ;
+	right: 20px ;
+	
+	z-index: 20 ;
+}
+
+/*Top Logos Language*/
+.topMultipleLogos_Language
+{
+	position: absolute ;
+	
+	top: 30px ;
+	right: 150px ;
+	
+	z-index: 20 ;
+}
+
+/*WorldMap icon*/
+.worlMap_icon
+{
+	position: absolute ;
+	
+	top: 10px ;
+	right: 25px ;
+	
+	width: 90px ;
+	height: 100px ;
+	
+	background-image: url(../img/img_worldMap.png) ;
+	background-repeat: no-repeat ;
+	background-position: top left ;
+	
+	overflow: hidden ;
+	
+	z-index: 20 ;
+}
+
+	/*Actual Language*/
+.actualLanguage
+{
+	position: absolute ;
+	
+	bottom: 0px ;
+	right: 0px ;
+	
+	z-index: 3 ;
+}
+
+/*Audio Buttons*/
+	/*Audio Call*/
+.AudioCall
+{
+	position: absolute ;
+	
+	right: 20px ;
+	bottom: 20px ;
+	
+	z-index: 20 ;
+}
+
+	/*Background Audio*/
+.backgroundAudio
+{
+	position: absolute ;
+	
+	bottom: -100px ;
+	right: 80px ;
+	
+	z-index: 20 ;
+}
+
+	/*Locution Audio*/
+.locutionAudio
+{
+	position: absolute ;
+	
+	bottom: -100px ;
+	right: 130px ;
+	
+	z-index: 20 ;
+}
+
+/*Close button*/
+.btnCerrar
+{
+	position: absolute ;
+	
+	z-index: 10 ;
+}
+
+/************ Flechas ************/
+/*Back*/
+.flechaBack
+{
+	position: absolute ;
+	
+	top: 50% ;
+	margin-top: -30px ;
+	
+	left: 10px ;
+	
+	width: 60px ;
+	height: 60px ;
+	
+	overflow: hidden ;
+	
+	z-index: 15 ;
+}
+
+/*Next*/
+.flechaNext
+{
+	position: absolute ;
+	
+	top: 50% ;
+	margin-top: -30px ;
+	
+	right: 10px ;
+	
+	width: 60px ;
+	height: 60px ;
+	
+	overflow: hidden ;
+	
+	z-index: 15 ;
+}
+
+/*Black Screen*/
+.blackScreen
+{
+	position: absolute ;
+	
+	top: 0px;
+	left: 1300px ;
+	/*left: 0px ;*/
+	
+	width: 1280px ;
+	height: 960px ;
+	
+	background-image: url(../img/img_blackScreen.png) ;
+	background-size: cover ;
+	
+	z-index: 5 ;
+}
+
+/*Rolling Images*/
+#roll_01
+{
+	opacity: .5 ;	
+	z-index: -1 ;
+	
+}
+
+#roll_02
+{
+	opacity: .5 ;
+	z-index: -1 ;
+}
+
+
+/************ Title bullets ************/
+/*Title Bullets*/
+.txt_Title_bullets
+{
+	position: absolute ;
+	
+	top: 175px ;
+	left: 0px ;
+	
+	padding-left: 150px ;
+	
+	width: 1280px ;
+	
+	font-family: OliveaLight ;
+	
+	font-size: 2em ;
+	text-align: left ;
+	
+	color: #0076A0 ;
+	
+	z-index: 1 ;
+}
+
+	/*Before*/
+.txt_Title_bullets:before
+{
+	margin-right: 10px ;
+	margin-top: 5px ;
+		
+	content: url(../img/img_bullet_titles.png) ;
+}
+
+	/*strong , b*/
+.txt_Title_bullets strong , b
+{
+	font-family: OliveaBold ;
+	
+	text-align: left ;
+	
+	color: #0076A0 ;
+	
+	z-index: 1 ;
+}
+
+/************ ShortCuts Icons ************/
+.shortCuts
+{
+	float: left ;
+}
+
+
+/************ Texts ************/
+	/*Left*/
+.all_leftText
+{
+	position: absolute ;
+	
+	left: 150px ;
+	
+	width: 575px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*Left bullets*/
+.all_leftText_bullet
+{
+	position: absolute ;
+	
+	left: 175px ;
+	
+	width: 550px ;
+	
+	font-size: 1.15em ;
+}
+
+/************ Images ************/
+	/*Right*/
+.all_rightImage
+{
+	position: absolute ;
+	
+	right: 100px ;
+	bottom: 0px ;
+}
+
+/*No disponible text*/
+#noDisponible
+{
+	top: 450px ;
+	font-size: 1.5em ;
+}
+
+/**********************************************
+Menu Buttons
+***********************************************/
+/*Menu Elements*/
+.menuElement
+{
+	position: absolute ;
+	
+	width: 200px ;
+	height: 205px ;
+	
+	background-image: url(../img/img_back_shadow.png) ;
+	background-repeat: no-repeat ;
+	background-position: top left;
+	
+	overflow: hidden ;
+	
+	z-index: 2 ;
+}
+
+		/*Menu Element Image*/
+.me_Image
+{
+	position: absolute ;
+	
+	width: 180px ;
+	height: 180px ;
+	
+	top: 0px ;
+	left: 10px ;
+	
+	border-radius: 25px ;
+	-moz-border-radius: 25px ;
+	-ms-border-radius: 25px ;
+	-webkit-border-radius: 25px ;
+	
+	box-shadow: inset 10px 10px 20px rgba(0,0,0,.75) ;
+	-moz-box-shadow: inset 10px 10px 20px rgba(0,0,0,.75) ;
+	-webkit-box-shadow: inset 10px 10px 20px rgba(0,0,0,.75) ;
+		
+	overflow: hidden ;
+
+	z-index: 2 ;
+}
+
+		/*Menu Element Shadow*/
+.me_Shadow
+{
+	position: absolute ;
+	
+	bottom: 0px ;
+	left: 0px ;
+	
+	z-index: -1 ;
+}
+
+/*Two Bottons Menu*/
+	/*01*/
+#btn_02_01
+{
+	top: 375px ;
+	left: 325px ;
+}
+
+	/*02*/
+#btn_02_02
+{
+	top: 375px ;
+	left: 725px ;
+}
+
+/*Three Bottons Menu*/
+	/*01*/
+#btn_03_01
+{
+	top: 375px ;
+	left: 300px ;
+}
+
+	/*02*/
+#btn_03_02
+{
+	top: 375px ;
+	left: 550px ;
+}
+
+	/*03*/
+#btn_03_03
+{
+	top: 375px ;
+	left: 800px ;
+}
+
+/*Four Bottons Top Menu*/
+	/*01*/
+#btn_04_01
+{
+	top: 375px ;
+	left: 150px ;
+}
+
+	/*02*/
+#btn_04_02
+{
+	top: 375px ;
+	left: 400px ;
+}
+
+	/*03*/
+#btn_04_03
+{
+	top: 375px ;
+	left: 650px ;
+}
+
+	/*04*/
+#btn_04_04
+{
+	top: 375px ;
+	left: 900px ;
+}
+
+/*Six Bottons Menu*/
+	/*01*/
+#btn_06_01
+{
+	top: 300px ;
+	left: 200px ;
+}
+
+	/*02*/
+#btn_06_02
+{
+	top: 300px ;
+	left: 500px ;
+}
+
+	/*03*/
+#btn_06_03
+{
+	top: 300px ;
+	left: 800px ;
+}
+
+	/*04*/
+#btn_06_04
+{
+	top: 575px ;
+	left: 300px ;
+}
+
+	/*05*/
+#btn_06_05
+{
+	top: 575px ;
+	left: 600px ;
+}
+
+	/*06*/
+#btn_06_06
+{
+	top: 575px ;
+	left: 900px ;
+}
+
+/*Eight Bottons Menu*/
+	/*01*/
+#btn_08_01
+{
+	top: 300px ;
+	left: 150px ;
+}
+
+	/*02*/
+#btn_08_02
+{
+	top: 300px ;
+	left: 375px ;
+}
+
+	/*03*/
+#btn_08_03
+{
+	top: 300px ;
+	left: 600px ;
+}
+
+	/*04*/
+#btn_08_04
+{
+	top: 300px ;
+	left: 825px ;
+}
+
+	/*05*/
+#btn_08_05
+{
+	top: 575px ;
+	left: 275px ;
+}
+
+	/*06*/
+#btn_08_06
+{
+	top: 575px ;
+	left: 500px ;
+}
+
+	/*07*/
+#btn_08_07
+{
+	top: 575px ;
+	left: 725px ;
+}
+
+	/*08*/
+#btn_08_08
+{
+	top: 575px ;
+	left: 950px ;
+}
+
+/**********************************************
+CoverSheet
+***********************************************/
+/*Pharma Girl*/
+.pharmaGirl
+{
+	position: absolute ;
+	
+	bottom: -10px ;
+	left: 25px ;
+}
+
+/*Pharma Icon*/
+.pharmaIcon
+{
+	position: absolute ;
+	
+	top: 50px ;
+	left: 675px ;
+}
+
+/*Pharma Text*/
+.pharmaText
+{
+	position: absolute ;
+	
+	top: 50px ;
+	left: 835px ;
+}
+
+/*Logos*/
+	/*Vicks*/
+.cover_logoVicks
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 650px ;
+}
+
+	/*Metamucil*/
+.cover_logoMetamucil
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 715px ;
+}
+
+	/*Hipoglos*/
+.cover_logoHipoglos
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 800px ;
+}
+
+	/*Pepto-Bismol*/
+.cover_logoPeptoBismol
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 965px ;
+}
+
+	/*Clearblue*/
+.cover_logoClearblue
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 1050px ;
+}
+
+/*Plataforma text*/
+.plataforma_txt
+{
+	position: absolute ;
+	
+	top: 310px ;
+	left: 675px ;
+	
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	color: #2681A1 ;
+}
+
+/*Iniciar*/
+.btnIniciar
+{
+	position: absolute ;
+	
+	top: 550px ;
+	left: 925px ;
+}
+
+/*Bienvenido*/
+.txtWelcome
+{
+	position: absolute ;
+	
+	top: 750px ;
+	left: 665px ;
+	
+	min-width: 600px ;
+	
+	font-face: OliveaLight ;
+	font-size: 3em ;
+	
+	text-align: center ;
+	
+	color: #2D4258 ;
+}
+
+/*Logo P&G*/
+.logoPyG
+{
+	position: absolute ;
+	
+	bottom: 20px ;
+	right: 15px ;
+}
+
+/**********************************************
+Language Selector
+***********************************************/
+/*Language Wave*/
+.languageWave
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 0px ;
+	
+	width: 1280px ;
+	
+	overflow: hidden ;
+	
+	z-index: 1 ;
+}
+
+/*World Map*/
+.languageMap
+{
+	position: absolute ;
+	
+	top: 125px ;
+	left: 292.5px ;
+	
+	z-index: 2 ;
+}
+
+/*Selecciona pasis texto*/
+.txt_SeleccionaPais
+{
+	position: absolute ;
+	
+	width: 1280px ;
+	
+	bottom: 75px ;
+	
+	font-size: 1.5em ;
+
+	text-align: center ;
+	
+	color: #364358 ;
+	
+	z-index: 3 ;
+}
+
+/*Flag Selectors*/
+	/*Mexico*/
+.selector_Mexico
+{
+	position: absolute ;
+	
+	top: 300px ;
+	left: 545px ;
+	
+	z-index: 4 ;
+}
+
+	/*Venezuela*/
+.selector_Venezuela
+{
+	position: absolute ;
+	
+	top: 400px ;
+	left: 760px ;
+	
+	z-index: 4 ;
+}
+
+	/*Colombia*/
+.selector_Colombia
+{
+	position: absolute ;
+	
+	top: 420px ;
+	left: 710px ;
+	
+	z-index: 4 ;
+}
+
+	/*Peru*/
+.selector_Peru
+{
+	position: absolute ;
+	
+	top: 475px ;
+	left: 675px ;
+	
+	z-index: 4 ;
+}
+
+	/*Brasil*/
+.selector_Brasil
+{
+	position: absolute ;
+	
+	top: 500px ;
+	left: 825px ;
+	
+	z-index: 4 ;
+}
+
+	/*Chile*/
+.selector_Chile
+{
+	position: absolute ;
+	
+	top: 525px ;
+	left: 725px ;
+	
+	z-index: 4 ;
+}
+
+	/*Argentina*/
+.selector_Argentina
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 725px ;
+	
+	z-index: 4 ;
+}
+
+	/*LADMAR*/
+.selector_Ladmar
+{
+	position: absolute ;
+	
+	top: 375px ;
+	left: 650px ;
+	
+	z-index: 4 ;
+}
+
+/**********************************************
+Area menu
+***********************************************/
+/*Title*/
+.txt_Title
+{
+	position: absolute ;
+	
+	top: 150px ;
+	left: 0px ;
+	
+	width: 1280px ;
+	
+	font-family: OliveaLight ;
+	
+	font-size: 2em ;
+	text-align: center ;
+	
+	color: #0076A0 ;
+	
+	z-index: 1 ;
+}
+
+/*Instrucciones*/
+.Instrucciones
+{
+	position: absolute ;
+	
+	bottom: 45px ;
+	left: 0px ;
+	
+	width: 1280px ;
+	
+	font-family: OliveaBold ;
+	
+	font-size: 1.25em ;
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 5 ;
+}
+
+/**********************************************
+Rol menu
+***********************************************/
+/*Roles*/
+.imgRol
+{
+	position: absolute ;
+	
+	top: 175px ;
+	left: 125px ;
+	
+	border-radius: 30px ;
+	
+	box-shadow: 0px 0px 15px #000000 ;
+	-moz-box-shadow: 0px 0px 15px #000000 ;
+	-webkit-box-shadow: 0px 0px 15px #000000 ;
+	
+	overflow: hidden ;
+		
+	z-index: 1 ;
+}
+
+/*Ingresa text*/
+.txt_Ingresa
+{
+	position: absolute ;
+	
+	top: 200px ;
+	left: 600px ;
+	
+	font-family: OliveaLight ;
+	font-size: 2em ;
+	color: #FFF ;
+}
+
+/*Inciar text*/
+.txt_IniciaEntrenamiento
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 650px ;
+	
+	font-family: OliveaLight ;
+	font-size: 2em ;
+	color: #FFF ;
+}
+
+/*Usuario*/
+	/*Text*/
+.txt_User
+{
+	position: absolute ;
+	
+	top: 325px ;
+	left: 600px ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.25em ;
+	color: #FFF ;
+}
+
+	/*Input*/
+.input_User
+{
+	position: absolute ;
+	
+	top: 375px ;
+	left: 600px ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.25em ;
+	color: #364358 ;
+}
+
+/*Contraseña*/
+	/*Text*/
+.txt_Password
+{
+	position: absolute ;
+	
+	top: 425px ;
+	left: 600px ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.25em ;
+	color: #FFF ;
+}
+
+	/*Input*/
+.input_Password
+{
+	position: absolute ;
+	
+	top: 475px ;
+	left: 600px ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.25em ;
+	color: #364358 ;
+}
+
+/*Buttons*/
+.btnRol
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	
+	width: 95px ;
+	height: 35px ;
+	
+	background: rgba(215,216,216,1) ;
+	
+	border: solid 2px rgba(118,118,118,1) ;
+	border-radius: 10px ;
+	
+	font-size: 1.25em ;
+	
+	text-align: center ;
+	
+	color: #2F2A31 ;
+}
+
+	/*Ingresar*/
+#btnRol_Ingresar
+{
+	top: 525px ;
+	left: 600px ;
+}
+
+	/*Cancelar*/
+#btnRol_Cancelar
+{
+	top: 525px ;
+	left: 725px ;
+}
+
+/*Wrong Password*/
+.txt_WrongPassword
+{
+	position: absolute ;
+	
+	top: 600px ;
+	left: 600px ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.25em ;
+	color: #FFF ;
+}
+
+/**********************************************
+Objetivo
+***********************************************/
+/*Image Objetivos*/
+.img_Objetivo
+{
+	position: absolute ;
+	
+	bottom: -10px ;
+	left: 75px ;
+	
+	z-index: 1 ;
+}
+
+/*Text Objetivos*/
+.txt_Objetivo
+{
+	position: absolute ;
+	
+	top: 200px ;
+	left: 575px ;
+	
+	width: 500px ;
+	
+	font-size: 1.5em ;
+	line-height: 200% ;
+	
+	color: #364358 ;
+	
+	z-index: 2 ;
+}
+
+/**********************************************
+Inducción
+***********************************************/
+
+/*************************
+P&G Teva
+*************************/
+/*Logo Pharma*/
+.logoPharma_teva
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 457px ;
+	
+	z-index: 1 ;
+}
+
+/*Aditional logos*/
+	/*P&G*/
+.logo_PyG_teva
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 457px ;
+	
+	z-index: 1 ;
+}
+
+	/*TEVA*/
+.logo_TEVA_teva
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 425px ;
+	
+	z-index: 1 ;
+}
+
+/*Info sections*/
+	/*P&G*/
+.info_PyG
+{
+	position: absolute ;
+	
+	top: 375px ;
+	left: 150px ;
+	
+	overflow: hidden ;
+	
+	z-index: 1 ;
+}
+
+	/*TEVA*/
+.info_TEVA
+{
+	position: absolute ;
+	
+	top: 375px ;
+	right: 150px ;
+	
+	overflow: hidden ;
+	
+	z-index: 1 ;
+}
+
+/*************************
+Tipos de Tiendas
+*************************/
+/*Tipos Tiendas Buttons*/
+	/*01*/
+#menu_pyramid_01
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 335px ;
+	
+	z-index: 1 ;
+}
+
+	/*02*/
+#menu_pyramid_02
+{
+	position: absolute ;
+	
+	top: 425px ;
+	left: 250px ;
+	
+	z-index: 1 ;
+}
+
+	/*03*/
+#menu_pyramid_03
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 150px ;
+	
+	z-index: 1 ;
+}
+
+
+
+/*Mexico Tipos Tiendas Buttons*/
+	/*01*/
+#menu_pyramid_04_01
+{
+	position: absolute ;
+	
+	top: 650px ;
+	left: 150px ;
+	
+	z-index: 1 ;
+}
+
+	/*02*/
+#menu_pyramid_04_02
+{
+	position: absolute ;
+	
+	top: 650px ;
+	left: 400px ;
+	
+	z-index: 1 ;
+}
+
+	/*03*/
+#menu_pyramid_04_03
+{
+	position: absolute ;
+	
+	top: 650px ;
+	left: 650px ;
+	
+	z-index: 1 ;
+}
+
+	/*03*/
+#menu_pyramid_04_04
+{
+	position: absolute ;
+	
+	top: 650px ;
+	left: 900px ;
+	
+	z-index: 1 ;
+}
+
+
+
+
+/*Pyramid Three Steps*/
+	/*01*/
+.pyramid_01
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 700px ;
+	
+	z-index: 3 ;
+}
+
+	/*02*/
+.pyramid_02
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 610px ;
+	
+	z-index: 2 ;
+}
+
+	/*03*/
+.pyramid_03
+{
+	position: absolute ;
+	
+	top: 600px ;
+	left: 510px ;
+	
+	z-index: 1 ;
+}
+
+
+
+
+/*Pyramid Four Steps*/
+	/*01*/
+.pyramid_04_01
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 780px ;;
+	
+	z-index: 4 ;
+}
+
+	/*02*/
+.pyramid_04_02
+{
+	position: absolute ;
+	
+	top: 320px ;
+	left: 750px ;
+	
+	z-index: 3 ;
+}
+
+	/*03*/
+.pyramid_04_03
+{
+	position: absolute ;
+	
+	top: 380px ;
+	left: 703px ;
+	
+	z-index: 2 ;
+}
+
+	/*04*/
+.pyramid_04_04
+{
+	position: absolute ;
+	
+	top: 445px ;
+	left: 650px ;
+	
+	z-index: 1 ;
+}
+
+
+
+
+/*Three Lines*/
+	/*01*/
+.line_01
+{
+	position: absolute ;
+	
+	top: 325px ;
+	left: 550px ;
+	
+	z-index: 3 ;
+}
+
+	/*02*/
+.line_02
+{
+	position: absolute ;
+	
+	top: 495px ;
+	left: 465px ;
+	
+	z-index: 2 ;
+}
+
+	/*03*/
+.line_03
+{
+	position: absolute ;
+	
+	top: 675px ;
+	left: 365px ;
+	
+	z-index: 1 ;
+}
+
+
+
+/*Four Lines*/
+	/*01*/
+.line_04_01
+{
+	position: absolute ;
+	
+	top: 235px ;
+	left: 605px ;
+	
+	z-index: 3 ;
+}
+
+	/*02*/
+.line_04_02
+{
+	position: absolute ;
+	
+	top: 315px ;
+	left: 570px ;
+	
+	z-index: 2 ;
+}
+
+	/*03*/
+.line_04_03
+{
+	position: absolute ;
+	
+	top: 395px ;
+	left: 535px ;
+	
+	z-index: 1 ;
+}
+
+	/*04*/
+.line_04_04
+{
+	position: absolute ;
+	
+	top: 475px ;
+	left: 500px ;
+	
+	z-index: 1 ;
+}
+
+
+
+
+/*Percentages*/
+	/*01*/
+.percent_01
+{
+	position: absolute ;
+	
+	top: 335px ;
+	left: 575px ;
+	
+	font-size: 2.5em ;
+	
+	font-family: OliveaBold ;
+	color: #2E272E ;
+	
+	z-index: 2 ;
+}
+
+	/*02*/
+.percent_02
+{
+	position: absolute ;
+	
+	top: 510px ;
+	left: 490px ;
+	
+	font-size: 2.5em ;
+	
+	font-family: OliveaBold ;
+	color: #2E272E ;
+	
+	z-index: 2 ;
+}
+
+	/*03*/
+.percent_03
+{
+	position: absolute ;
+	
+	top: 685px ;
+	left: 400px ;
+	
+	font-size: 2.5em ;
+	
+	font-family: OliveaBold ;
+	color: #2E272E ;
+	
+	z-index: 2 ;
+}
+
+
+
+/*More/Less Info*/
+.moreLess_info
+{
+	position: absolute ;
+	
+	top: 850px ;
+	left: 950px ;
+	
+	font-size: 2em ;
+	
+	font-family: OliveaBold ;
+	color: #2E272E ;
+	
+	display: none ;
+	
+	z-index: 1 ;
+}
+
+
+
+
+/*More Info Text*/
+	/*01*/
+.infoText_01
+{
+	position: absolute ;
+	
+	top: 235px ;
+	left: 400px ;
+	
+	text-align: right ;
+	
+	/*display: none ;*/
+	
+	z-index: 2 ;
+}
+
+	/*02*/
+.infoText_02
+{
+	position: absolute ;
+	
+	top: 315px ;
+	left: 385px ;
+	
+	text-align: right ;
+	
+	/*display: none ;*/
+	
+	z-index: 2 ;
+}
+
+	/*03*/
+.infoText_03
+{
+	position: absolute ;
+	
+	top: 395px ;
+	left: 415px ;
+	
+	text-align: right ;
+	
+	/*display: none ;*/
+	
+	z-index: 2 ;
+}
+
+	/*04*/
+.infoText_04
+{
+	position: absolute ;
+	
+	top: 475px ;
+	left: 375px ;
+	
+	text-align: right ;
+	
+	/*display: none ;*/
+	
+	z-index: 2 ;
+}
+
+/*Table*/
+.menu_tiposTienda_tabla
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 750px ;
+	
+	display: none ;
+	
+	z-index: 1 ;
+}
+
+
+/*************************
+Go to Market
+*************************/
+/*Go to market image*/
+.goToMarket_img
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 100px ;
+	
+	z-index: 1 ;
+}
+
+
+
+/*Go to market images*/
+.goToMarket_images
+{
+	position: absolute ;
+	z-index: 1 ;
+}
+
+	/*México*/
+	/*01*/
+#goToMarket_img_01_mex
+{
+	top: 295px ;
+	left: 105px ;
+}
+
+	/*02*/
+#goToMarket_img_02_mex
+{
+	top: 650px ;
+	left: 365px ;
+}
+
+	/*03*/
+#goToMarket_img_03_mex
+{
+	top: 175px ;
+	left: 275px ;
+}
+
+	/*04*/
+#goToMarket_img_04_mex
+{
+	top: 350px ;
+	left: 925px ;
+}
+
+	/*Brasil*/
+.goToMarket_images
+{
+	position: absolute ;
+	z-index: 1 ;
+}
+
+		/*01*/
+#goToMarket_img_01
+{
+	top: 495px ;
+	left: 105px ;
+}
+
+		/*02*/
+#goToMarket_img_02
+{
+	top: 600px ;
+	left: 365px ;
+}
+
+		/*03*/
+#goToMarket_img_03
+{
+	top: 200px ;
+	left: 275px ;
+}
+
+		/*04*/
+#goToMarket_img_04
+{
+	top: 335px ;
+	left: 925px ;
+}
+
+
+
+/*Go to market texts*/
+.txtGoMarket
+{
+	position: absolute ;
+	
+	font-size: 1.25em ;
+	width: 400px ;
+}
+
+	/*01*/
+#txtGoMarket_01
+{
+	top: 650px ;
+	left: 775px ;
+}
+
+	/*02*/
+#txtGoMarket_02
+{
+	top: 725px ;
+	left: 775px ;
+}
+
+	/*03*/
+#txtGoMarket_03
+{
+	top: 800px ;
+	left: 775px ;
+}
+
+
+/*************************
+OrganizacionimageHerramientas
+*************************/
+/******************Slide 001******************/
+/*Organizacion image*/
+.organizacionAgencias_img
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 215px ;
+	
+	z-index: 1 ;
+}
+
+/*Organizacion bulets*/
+.organizacionAgencias_bullet
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	font-size: 1.25em ;
+	
+	z-index: 1 ;
+}
+
+	/*Before*/
+.organizacionAgencias_bullet:before
+{
+	content: url(../img/Induccion/Organizacion/img_smallPharma_bullet.png) ;
+}
+
+/*México*/
+	/*01*/
+#organizacionAgencias_bullet_01_mex
+{
+	top: 350px ;
+	left: 125px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*02*/
+#organizacionAgencias_bullet_02_mex
+{
+	top: 415px ;
+	left: 125px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*03*/
+#organizacionAgencias_bullet_03_mex
+{
+	top: 565px ;
+	left: 125px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*04*/
+#organizacionAgencias_bullet_04_mex
+{
+	top: 675px ;
+	left: 125px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*05*/
+#organizacionAgencias_bullet_05_mex
+{
+	top: 785px ;
+	left: 125px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*06*/
+#organizacionAgencias_bullet_06_mex
+{
+	position: absolute ;
+	
+	top: 280px ;
+	left: 700px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*07*/
+#organizacionAgencias_bullet_07_mex
+{
+	top: 330px ;
+	left: 725px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*08*/
+#organizacionAgencias_bullet_08_mex
+{
+	top: 460px ;
+	left: 700px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*09*/
+#organizacionAgencias_bullet_09_mex
+{
+	top: 585px ;
+	left: 700px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*10*/
+#organizacionAgencias_bullet_10_mex
+{
+	top: 730px ;
+	left: 700px ;
+	
+	font-size: 1.15em ;
+}
+
+	/*11*/
+#organizacionAgencias_bullet_11_mex
+{
+	top: 840px ;
+	left: 700px ;
+	
+	font-size: 1.15em ;
+}
+
+/*Brasil*/
+	/*01*/
+#organizacionAgencias_bullet_01
+{
+	top: 600px ;
+	left: 125px ;
+}
+
+	/*02*/
+#organizacionAgencias_bullet_02
+{
+	top: 675px ;
+	left: 125px ;
+}
+
+	/*03*/
+#organizacionAgencias_bullet_03
+{
+	top: 750px ;
+	left: 125px ;
+}
+
+	/*04*/
+#organizacionAgencias_bullet_04
+{
+	top: 600px ;
+	left: 725px ;
+}
+
+	/*05*/
+#organizacionAgencias_bullet_05
+{
+	top: 675px ;
+	left: 725px ;
+}
+
+/******************Slide 002******************/
+/*Rectangles 01*/
+.rectangle_01
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	
+	width: 115px ;
+	height: 60px ;
+	
+	font-size: 1.15em ;
+	color: #FFF ;
+	
+	text-align: center ;
+	
+	background: rgba(30,33,38,1) ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+	
+	z-index: 1 ;
+}
+
+/*Rectangles 02*/
+.rectangle_02
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	
+	width: 140px ;
+	height: 60px ;
+	
+	font-size: 1.15em ;
+	color: #FFF ;
+	
+	text-align: center ;
+	
+	background: rgba(30,33,38,1) ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+	
+	z-index: 1 ;
+}
+
+/*Rectangles 03*/
+.rectangle_03
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	
+	width: 280px ;
+	height: 60px ;
+	
+	font-size: 1.15em ;
+	color: #FFF ;
+	
+	text-align: center ;
+	
+	background: rgba(30,33,38,1) ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+	
+	z-index: 1 ;
+}
+
+/*Rectangles 04*/
+.rectangle_04
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	padding-top: 5px ;
+	
+	width: 170px ;
+	height: 60px ;
+	
+	font-size: 1.15em ;
+	color: #FFF ;
+	
+	text-align: center ;
+	
+	background: rgba(30,33,38,1) ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+	
+	z-index: 1 ;
+}
+
+/*México*/
+	/*Block 01*/
+		/*01*/
+#rectangle_01_01_mex
+{
+	top: 250px ;
+	left: 550px ;
+	
+	background-color: #166380 ;
+}
+
+	/*Block 02*/
+		/*01*/
+#rectangle_02_01_mex
+{
+	top: 400px ;
+	left: 225px ;
+	
+	background-color: #1c83a3 ;
+}
+
+		/*02*/
+#rectangle_02_02_mex
+{
+	top: 400px ;
+	left: 545px ;
+	
+	background-color: #1c83a3 ;
+}
+
+		/*03*/
+#rectangle_02_03_mex
+{
+	top: 400px ;
+	left: 865px ;
+	
+	background-color: #1c83a3 ;
+}
+
+	/*Block 03*/
+		/*01*/
+#rectangle_03_01_mex
+{
+	height: 75px ;
+	
+	top: 550px ;
+	left: 210px ;
+	
+	background-color: #5b7f34 ;
+}
+
+		/*02*/
+#rectangle_03_02_mex
+{
+	height: 75px ;
+	
+	top: 550px ;
+	left: 725px ;
+	
+	background-color: #5b7f34 ;
+}
+
+		/*03*/
+#rectangle_03_03_mex
+{
+	height: 75px ;
+	
+	top: 550px ;
+	left: 975px ;
+	
+	background-color: #5b7f34 ;
+}
+
+	/*Block 04*/
+		/*01*/
+#rectangle_04_01_mex
+{
+	top: 725px ;
+	left: 210px ;
+	
+	background-color: #c4a31c ;
+}
+
+
+
+/*Arrows*/
+	/*Block 01*/
+		/*01*/
+#littleArrow_01_mex
+{
+	position: absolute ;
+	
+	top: 350px ;
+	left: 275px ;
+	
+	z-index: 2 ;
+}
+
+		/*02*/
+#littleArrow_02_mex
+{
+	position: absolute ;
+	
+	top: 495px ;
+	left: 275px ;
+	
+	z-index: 2 ;
+}
+
+		/*03*/
+#littleArrow_03_mex
+{
+	position: absolute ;
+	
+	top: 695px ;
+	left: 275px ;
+	
+	z-index: 2 ;
+}
+
+	/*Block 02*/
+		/*04*/
+#littleArrow_04_mex
+{
+	position: absolute ;
+	
+	top: 295px ;
+	left: 560px ;
+	
+	z-index: 2 ;
+}
+
+		/*05*/
+#littleArrow_05_mex
+{
+	position: absolute ;
+	
+	top: 595px ;
+	left: 560px ;
+	
+	z-index: 2 ;
+}
+
+		/*06*/
+#littleArrow_06_mex
+{
+	position: absolute ;
+	
+	top: 795px ;
+	left: 560px ;
+	
+	z-index: 2 ;
+}
+
+	/*Block 03*/
+		/*07*/
+#littleArrow_07_mex
+{
+	position: absolute ;
+	
+	top: 295px ;
+	left: 950px ;
+	
+	z-index: 2 ;
+}
+
+
+
+/*Brasil*/
+	/*Block 01*/
+		/*01*/
+#rectangle_01_01
+{
+	top: 250px ;
+	left: 600px ;
+	
+	background-color: #166380 ;
+}
+
+	/*Block 02*/
+		/*01*/
+#rectangle_02_01
+{
+	top: 400px ;
+	left: 275px ;
+	
+	background-color: #1c83a3 ;
+}
+
+		/*02*/
+#rectangle_02_02
+{
+	top: 400px ;
+	left: 595px ;
+	
+	background-color: #1c83a3 ;
+}
+
+		/*03*/
+#rectangle_02_03
+{
+	top: 400px ;
+	left: 915px ;
+	
+	background-color: #1c83a3 ;
+}
+
+	/*Block 03*/
+		/*01*/
+#rectangle_03_01
+{
+	width: 160px ;
+	height: 75px ;
+	
+	top: 550px ;
+	left: 265px ;
+	
+	font-size: 1em ;
+	
+	background-color: #5b7f34 ;
+}
+
+		/*02*/
+#rectangle_03_02
+{
+	width: 160px ;
+	height: 75px ;
+	
+	top: 550px ;
+	left: 585px ;
+	
+	font-size: 1em ;
+	
+	background-color: #5b7f34 ;
+}
+
+		/*03*/
+#rectangle_03_02a
+{
+	left:700px;
+	top:550px;
+	
+	width: 160px ;
+	height: 75px ;
+	
+	font-size: 1em ;
+	
+	background-color: #5b7f34 ;
+}
+
+		/*04*/
+#rectangle_03_03
+{
+	width: 160px ;
+	height: 75px ;
+	
+	top: 550px ;
+	left: 905px ;
+	
+	font-size: 1em ;
+	
+	background-color: #5b7f34 ;
+}
+
+	/*Block 04*/
+		/*01*/
+#rectangle_04_01
+{
+	top: 700px ;
+	left: 265px ;
+	
+	background-color: #c4a31c ;
+}
+
+		/*03*/
+#rectangle_04_02
+{
+	top: 700px ;
+	left: 575px ;
+	
+	background-color: #c4a31c ;
+}
+
+	/*Arrows*/
+		/*01*/
+#littleArrow_01
+{
+	position: absolute ;
+	
+	top: 495px ;
+	left: 335px ;
+	
+	z-index: 2 ;
+}
+
+		/*02*/
+#littleArrow_02
+{
+	position: absolute ;
+	
+	top: 270px ;
+	left: 220px ;
+	
+	z-index: 2 ;
+}
+
+		/*03*/
+#littleArrow_03
+{
+	position: absolute ;
+	
+	top: 420px ;
+	left: 220px ;
+	
+	z-index: 2 ;
+}
+
+
+/*Extra Content*/
+.rol_gralContainer
+{
+	position: absolute ;
+	
+	top: 125px ;
+	left: 200px ;
+	
+	width: 910px ;
+	height: 740px ;
+	
+	overflow: hidden ;
+	
+	z-index: 2 ;
+}
+
+/*Back Content*/
+.rol_backContent
+{
+	position: absolute ;
+	
+	left: 30px ;
+	
+	width: 860px ;
+	height: 700px ;
+	
+	background-image: url(../img/Induccion/Organizacion/img_back_rol.png) ;
+	background-repeat: no-repeat ;
+	background-size: cover ;
+	
+	z-index: 2 ;
+}
+
+	/*Puesto*/
+.rol_Puesto
+{
+	position: absolute ;
+	
+	top: 20px ;
+	left: 20px ;
+	
+	width: 820px ;
+	
+	font-family: OliveaBold ;
+	font-size: 2em ;
+	
+	color: #FFF ;
+	
+	z-index: 2 ; 
+}
+
+	/*Funciones*/
+.rol_Actividades
+{
+	position: absolute ;
+	
+	top: 125px ;
+	left: 20px ;
+	
+	width: 820px ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.15em ;
+	
+	color: #FFF ;
+	
+	z-index: 2 ; 
+}
+
+	/*Cerrar*/
+.rol_cerrar
+{
+	position: absolute ;
+	
+	bottom: 20px ;
+	right: 20px ;
+		
+	font-family: OliveaBold ;
+	font-size: 2em ;
+	
+	color: #FFF ;
+	
+	z-index: 2 ; 
+}
+
+	/*Shadow*/
+.rol_shadowContainer
+{
+	position: absolute ;
+	
+	bottom: 0px ;
+	left: 0px ;
+	
+	opacity: .25 ;
+	
+	z-index: -1 ;
+}
+
+/*************************
+Herramientas
+*************************/
+/******************Tablet, Celular y mochila******************/
+/*Organizacion image*/
+.imgHerramientas
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 100px ;
+	
+	z-index: 1 ;
+}
+
+/*Herramientas text*/
+.txtHerramientas
+{
+	position: absolute ;
+	
+	top: 350px ;
+	left: 700px ;
+	
+	width: 400px ;
+	
+	font-size: 1.5em ;
+}
+
+/*DownloadButton*/
+#btn_Download
+{
+	width: 100px ;
+	height: 40px ;
+	
+	top: 575px ;
+	left: 700px ;
+	
+	text-align: center ;
+	
+	background-color: #166380 ;
+}
+
+/******************Planilla de Objetivos******************/
+/*Images*/
+.planillaObj_img
+{
+	position: absolute ;
+	z-index: 1 ;
+}
+
+	/*01*/
+#planillaObj_img_01
+{
+	top: 275px ;
+	left: 250px ;
+}
+
+	/*02*/
+#planillaObj_img_02
+{
+	top: 475px ;
+	left: 240px ;
+}
+
+	/*03*/
+#planillaObj_img_03
+{
+	top: 675px ;
+	left: 280px ;
+}
+
+/*Página de objetivos button*/
+#btn_PaginaObjetivos
+{
+	width: 140px ;
+	height: 55px ;
+	
+	top: 275px ;
+	left: 1000px ;
+	
+	text-align: center ;
+	
+	background-color: #166380 ;
+}
+
+/*Textos planilla de objetivos*/
+.planillaObj_txt
+{
+	position: absolute ;
+	
+	font-size: 1.25em ;
+	
+	width: 450px ;
+}
+
+	/*01*/
+#planillaObj_txt_01
+{
+	top: 275px ;
+	left: 500px ;
+}
+
+	/*02*/
+#planillaObj_txt_02
+{
+	top: 475px ;
+	left: 500px ;
+}
+
+	/*03*/
+#planillaObj_txt_03
+{
+	top: 675px ;
+	left: 500px ;
+}
+
+/******************Planilla de Objetivos******************/
+/*Images*/
+.pagObj_img
+{
+	position: absolute ;
+	z-index: 1 ;
+}
+
+	/*01*/
+#pagObj_img_01
+{
+	top: 250px ;
+	left: 400px ;
+}
+
+	/*02*/
+#pagObj_img_02
+{
+	top: 540px ;
+	left: 95px ;
+}
+
+	/*03*/
+#pagObj_img_03
+{
+	top: 660px ;
+	left: 105px ;
+	
+	z-index: 2 ;
+}
+
+/*Texto*/
+#pagObj_txt
+{
+	position: absolute ;
+	top: 235px ;
+	
+	font-size: 1.15em ;
+}
+
+/******************Tabla de Pedidos******************/
+/*Image*/
+.tablaPedidos_img
+{
+	position: absolute ;
+	
+	top: 300px ;
+	left: 165px ;
+	
+	z-index: 1 ;
+}
+
+/*Image*/
+.tablaPedidos_flechas_01
+{
+	position: absolute ;
+	
+	top: 360px ;
+	left: 655px ;
+	
+	z-index: 1 ;
+}
+
+/*Image*/
+.tablaPedidos_flechas_02
+{
+	position: absolute ;
+	
+	top: 360px ;
+	left: 735px ;
+	
+	z-index: 1 ;
+}
+
+
+/**********************One Page**********************/
+/*Image*/
+.onePage_img
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 100px ;
+	
+	z-index: 1 ;
+}
+
+/****************Kit de Presentación****************/
+/*Button Educación al Farmacéutico*/
+#rectangle_btn_educaFarma
+{
+	top: 830px ;
+	left: 725px ;
+	
+	display: none ;
+}
+
+/*Image*/
+.kitPresentacion_img
+{
+	position: absolute ;
+}
+
+
+/*Mexico*/
+	/*01
+#kitPresentacion_img_01_mex
+{
+	top: 250px ;
+	left: 150px ;
+	
+	z-index: 1 ;
+}*/
+
+	/*02
+#kitPresentacion_img_02_mex
+{
+	top: 475px ;
+	left: 475px ;
+	
+	z-index: 3 ;
+}*/
+
+	/*03
+#kitPresentacion_img_03_mex
+{
+	top: 575px ;
+	left: 150px ;
+	
+	z-index: 5 ;
+}*/
+
+
+/*Brasil*/
+	/*01*/
+#kitPresentacion_img_01
+{
+	top: 250px ;
+	left: 150px ;
+	
+	z-index: 1 ;
+}
+
+	/*02*/
+#kitPresentacion_img_02
+{
+	top: 400px ;
+	left: 225px ;
+	
+	z-index: 2 ;
+}
+
+	/*03*/
+#kitPresentacion_img_03
+{
+	top: 675px ;
+	left: 475px ;
+	
+	z-index: 3 ;
+}
+
+	/*04*/
+#kitPresentacion_img_04
+{
+	top: 350px ;
+	left: 150px ;
+	
+	z-index: 4 ;
+}
+
+	/*05*/
+#kitPresentacion_img_05
+{
+	top: 675px ;
+	left: 150px ;
+	
+	z-index: 5 ;
+}
+
+	/*06*/
+#kitPresentacion_img_06
+{
+	top: 675px ;
+	left: 150px ;
+	
+	z-index: 5 ;
+}
+
+/*Titles*/
+.kit_txtTitle
+{
+	position: absolute ;
+	
+	left: 775px ;
+	
+	font-size: 1.15em ;
+	
+	z-index: 1 ;
+}
+
+	/*México*/
+		/*01
+#kit_txtTitle_01_mex
+{
+	top: 250px ;
+}*/
+
+		/*02
+#kit_txtTitle_02_mex
+{
+	top: 355px ;
+}*/
+
+		/*03
+#kit_txtTitle_03_mex
+{
+	top: 485px ;
+}*/
+
+		/*04
+#kit_txtTitle_04_mex
+{
+	top: 595px ;
+}*/
+
+
+	/*Brasil*/
+		/*Main Text*/
+#kit_txtTitle_main_text
+{
+	top: 200px ;
+	left: 725px ;
+	width: 450px ;
+}
+
+		/*Bottom Text*/
+#kit_txtTitle_bottom_text
+{
+	top: 760px ;
+	left: 725px ;
+	width: 450px ;
+}
+
+		/*01*/
+#kit_txtTitle_01
+{
+	top: 300px ;
+}
+
+		/*02*/
+#kit_txtTitle_02
+{
+	top: 380px ;
+}
+
+		/*03*/
+#kit_txtTitle_03
+{
+	top: 470px ;
+}
+
+		/*04*/
+#kit_txtTitle_04
+{
+	top: 580px ;
+}
+
+		/*05*/
+#kit_txtTitle_05
+{
+	top: 670px ;
+}
+
+		/*06*/
+#kit_txtTitle_06
+{
+	top: 760px ;
+}
+
+
+
+
+/*Contents*/
+.kit_txtContents
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	left: 800px ;
+	
+	font-size: 1.1em ;
+	
+	z-index: 1 ;
+}
+
+	/*México*/
+		/*01
+#kit_txtContents_01_mex
+{
+	top: 285px ;
+}*/
+
+		/*02
+#kit_txtContents_02_mex
+{
+	top: 395px ;
+}*/
+
+		/*03
+#kit_txtContents_03_mex
+{
+	top: 525px ;
+}*/
+
+		/*04
+#kit_txtContents_04_mex
+{
+	top: 635px ;
+}*/
+
+	/*Brasil*/
+		/*01*/
+#kit_txtContents_01
+{
+	top: 335px ;
+}
+
+		/*02*/
+#kit_txtContents_02
+{
+	top: 420px ;
+}
+
+		/*03*/
+#kit_txtContents_03
+{
+	top: 510px ;
+}
+
+		/*04*/
+#kit_txtContents_04
+{
+	top: 620px ;
+}
+
+		/*05*/
+#kit_txtContents_05
+{
+	top: 710px ;
+}
+
+		/*06*/
+#kit_txtContents_06
+{
+	top: 790px ;
+}
+
+/*Numbers*/
+.kitPresentacion_num
+{
+	position: absolute ;
+	
+	left: 725px ;
+	
+	z-index: 1 ;
+}
+
+
+	/*Mexico*/
+		/*01
+#kitPresentacion_num_01_mex
+{
+	top: 230px ;
+}*/
+
+		/*02
+#kitPresentacion_num_02_mex
+{
+	top: 335px ;
+}*/
+
+	/*03
+#kitPresentacion_num_03_mex
+{
+	top: 465px ;
+}*/
+
+	/*04
+#kitPresentacion_num_04_mex
+{
+	top: 575px ;
+}*/
+
+
+/*Brasil*/
+	/*01*/
+#kitPresentacion_num_01
+{
+	top: 280px ;
+}
+
+	/*02*/
+#kitPresentacion_num_02
+{
+	top: 360px ;
+}
+
+	/*03*/
+#kitPresentacion_num_03
+{
+	top: 450px ;
+}
+
+	/*04*/
+#kitPresentacion_num_04
+{
+	top: 560px ;
+}
+
+	/*05*/
+#kitPresentacion_num_05
+{
+	top: 660px ;
+}
+
+	/*06*/
+#kitPresentacion_num_06
+{
+	top: 740px ;
+}
+
+
+
+
+
+/****************Guía Farma****************/
+/*Image*/
+.guiaFarma_img
+{
+	position: absolute ;
+	
+	top: 325px ;
+	left: 105px ;
+}
+
+/*Texto*/
+.txtguiaFarma
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 140px ;
+	
+	width: 1000px ;
+	
+	font-size: 1.25em ;
+}
+
+/****************Material de Visibilidad****************/
+/*Image*/
+.materialVisibilidad_img
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 185px ;
+}
+
+/*Big Options Image*/
+.opt_img
+{
+	position: absolute ;
+	top: 750px ;
+}
+
+	/*01*/
+#optBig_img_01
+{
+	left: 325px ;
+}
+
+	/*02*/
+#optBig_img_02
+{
+	left: 500px ;
+}
+
+	/*03*/
+#optBig_img_03
+{
+	left: 700px ;
+}
+
+	/*04*/
+#optBig_img_04
+{
+	left: 875px ;
+}
+
+/*Little Options Image*/
+	/*01*/
+#optLittle_img_01
+{
+	top: 425px ;
+	left: 350px ;
+}
+
+	/*02*/
+#optLittle_img_02
+{
+	top: 260px ;
+	left: 725px ;
+}
+
+	/*03*/
+#optLittle_img_03
+{
+	top: 375px ;
+	left: 550px ;
+}
+
+	/*04*/
+#optLittle_img_04
+{
+	top: 475px ;
+	left: 850px ;
+}
+
+
+/*Big Options Text*/
+.opt_txt
+{
+	position: absolute ;
+	
+	top: 825px ;
+	
+	width: 150px ;
+	
+	font-family: OliveaBold ;
+	font-size: 1.25em ;
+	
+	text-align: center ;
+}
+
+	/*01*/
+#opt_txt_01
+{
+	left: 295px ;
+}
+
+	/*02*/
+#opt_txt_02
+{
+	left: 465px ;
+}
+
+	/*03*/
+#opt_txt_03
+{
+	left: 670px ;
+}
+
+	/*04*/
+#opt_txt_04
+{
+	left: 845px ;
+}
+
+/*Button Fundamentales de Ventas*/
+#btn_FundamentosVendas_mat
+{
+	position: absolute ;
+	
+	top: 175px ;
+	left: 925px ;
+	
+	width: 135px ;
+	
+	display: none ;
+}
+
+/*Btn Cerar*/
+#btnCerrar_matVisibilidad
+{
+	top: 125px ;
+	left: 1150px ;
+}
+
+
+
+
+/*************************
+Marcas
+*************************/
+/**********************************************
+Metamucil Informacion de la marca
+***********************************************/
+/************Slide 01**************/
+/*Grafico*/
+#img01_sld_01_inf_Marc_M
+{
+	position:absolute;
+	top: 227px;
+	left: 148px;
+	width: 406px;
+	height: 607px;
+	z-index: -1;
+	overflow: hidden ;
+	/*background-color: #DDD;*/
+}
+
+/*Grafico2*/
+#img02_sld_01_inf_Marc_M
+{
+	position:absolute;
+	top: 227px;
+	left: 630px;
+	width: 509px;
+	height: 607px;
+	z-index: -1;
+	overflow: hidden ;
+	/*background-color: #FFF;*/
+}
+
+/************Slide 8a Tec Enfermedad V**************/
+/*Box Text*/
+#txt01_sld_08a_inf_TecEnfer_V
+{
+	position:absolute;
+	top: 250px ;
+	left: 150px ;
+	width: 550px;
+	height: 25px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+	/*background-color: #FFF;*/
+}
+
+
+/************Slide 01**************/
+#logoMarcaCenter
+{
+	position:absolute;
+	top: 115px ;
+	left: 490px ;
+	width: 297px;
+	height: 190px;
+}
+
+#img00_sld_01
+{
+	position:absolute;
+	top: 0px ;
+	right: 0px ;
+	width: 536px;
+	height: 1032px;
+	z-index: -1;
+}
+
+#img01_sld_01
+{
+	position:absolute;
+	top: 240px ;
+	left: 137px ;
+	width: 112px;
+	height: 205px;
+	z-index: 1;
+}
+
+#txt01_sld_01
+{
+	position:absolute;
+	top: 266px ;
+	left: 277px ;
+	width: 747px;
+	height: 24px;
+	font-family: OliveaBold;
+	font-size: 1.25em ;
+	text-align:left;
+	color: #272628 ;
+}
+
+#txt02_sld_01
+{
+	position:absolute;
+	top: 315px ;
+	left: 330px ;
+	width: 747px;
+	height: 24px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	color: #272628 ;
+	line-height:2em;
+}
+
+#img02_sld_01
+{
+	position:absolute;
+	top: 618px ;
+	left: 280px ;
+	width: 112px;
+	height: 205px;
+	z-index: 1;
+}
+
+#txt03_sld_01
+{
+	position:absolute;
+	top: 550px ;
+	left: 277px ;
+	width: 747px;
+	height: 24px;
+	font-family: OliveaBold;
+	font-size: 1.25em ;
+	text-align:left;
+	color: #272628 ;
+}
+
+#txt04_sld_01
+{
+	position:absolute;
+	top: 600.5px ;
+	left: 330px;
+	width: 747px;
+	height: 24px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	color: #272628 ;
+	line-height:2.75em;
+}
+
+/************Slide 02**************/
+#img00_sld_02
+{
+	position:absolute;
+	top: -15px ;
+	left: 172px ;
+	width: 66.6px;
+	height: 66.6px;
+	z-index: -1;
+}
+
+#img01_sld_02
+{
+	position:absolute;
+	top: 365px ;
+	left: 58.5px ;
+	width: 112px;
+	height: 205px;
+	z-index: 1;
+}
+
+#txt01_sld_02
+{
+	position:absolute;
+	top: 266px ;
+	left: 500px ;
+	width: 747px;
+	height: 24px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align:left;
+	color: #272628 ;
+	line-height:2em;
+	z-index: 1;
+}
+
+#img02_sld_02
+{
+	position:absolute;
+	top: 567px ;
+	left: 865px ;
+	width: 464px;
+	height: 407px;
+	z-index: -1;
+}
+
+/************Slide 03**************/
+#img00_sld_03
+{
+	position:absolute;
+	top: 240px;
+	left: 200px;
+	width: 317px;
+	height: 582px;
+	z-index: -1;
+}
+
+#img01_sld_03
+{
+	position:absolute;
+	top: 185px ;
+	left: 635px ;
+	width: 406px;
+	height: 116px;
+	z-index: 1;
+}
+
+#img02_sld_03
+{
+	position:absolute;
+	top: 344px ;
+	left: 635px ;
+	width: 52px;
+	height: 52px;
+	z-index: 1;
+}
+
+#img03_sld_03
+{
+	position:absolute;
+	top: 443px ;
+	left: 635px;
+	width: 52px;
+	height: 52px;
+	z-index: 1;
+}
+
+#img04_sld_03
+{
+	position:absolute;
+	top: 534px ;
+	left: 635px;
+	width: 52px;
+	height: 52px;
+	z-index: 1;
+}
+
+#img05_sld_03
+{
+	position:absolute;
+	top: 624px ;
+	left: 635px ;
+	width: 52px;
+	height: 52px;
+	z-index: 1;
+}
+
+#img06_sld_03
+{
+	position:absolute;
+	top: 706px ;
+	left:635px ;
+	width: 52px;
+	height: 52px;
+	z-index: 1;
+}
+
+#txt01_sld_03
+{
+	position:absolute;
+	top: 330px;
+	left: 720px;
+	width: 400px;
+	height: 410px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align:left;
+	color: #272628 ;
+	line-height:4.5em;
+	z-index: 1;
+}
+
+#txt02_sld_03
+{
+	position:absolute;
+	top: 864px ;
+	left: 720px ;
+	width: 400px;
+	height: 50px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	color: #272628 ;
+	z-index: 1;
+}
+
+
+
+/**********************************************
+Metamucil Informacion Tecnica
+***********************************************/
+/************Anatomia y Fisiologia***********/
+/************Main**************/
+#img01_sld_00_infotec
+{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 415px;
+	height: 812px;
+	z-index: -1;
+}
+
+/************Slide 01**************/
+#img01_sld_01_infotec
+{
+	position:absolute;
+	bottom: 0px;
+	left: 430px;
+	width: 415px;
+	height: 812px;
+	z-index: -1;
+}
+
+#txt01_sld_01_infotec
+{
+	position:absolute;
+	top: 230px ;
+	left: 102px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:right;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt02_sld_01_infotec
+{
+	position:absolute;
+	top: 412px ;
+	left: 102px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:right;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt03_sld_01_infotec
+{
+	position:absolute;
+	top: 547px ;
+	left: 102px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:right;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt04_sld_01_infotec
+{
+	position:absolute;
+	top: 648px ;
+	left: 102px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:right;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt05_sld_01_infotec
+{
+	position:absolute;
+	top: 230px ;
+	left: 806px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt06_sld_01_infotec
+{
+	position:absolute;
+	top: 335px ;
+	left: 806px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt07_sld_01_infotec
+{
+	position:absolute;
+	top: 470px ;
+	left: 806px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt08_sld_01_infotec
+{
+	position:absolute;
+	top: 560px ;
+	left: 806px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt09_sld_01_infotec
+{
+	position:absolute;
+	top:740px ;
+	left: 806px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+#txt010_sld_01_infotec
+{
+	position:absolute;
+	top: 810px ;
+	left: 806px ;
+	width: 368px;
+	height: 160px;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align:left;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+
+/************Ingredientes Activos***********/
+/************Slide 01**************/
+#img01_sld_01_it_Ingr
+{
+	position:absolute;
+	top: 232px;
+	left: 112.5px;
+	width: 1055px;
+	height: 606px;
+	z-index: -2;
+}
+
+#img02_sld_01_it_Ingr
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 383px;
+	height: 180px;
+	z-index: -1;
+}
+
+#txt01_sld_01_it_Ingr
+{
+	position:absolute;
+	top: 249px ;
+	left: 188px ;
+	width: 900px;
+	height: 175px;
+	font-family: OliveaBold;
+	font-size: 2em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+	text-shadow: 0.1em 0.1em 0.05em #555;
+}
+
+#txt02_sld_01_it_Ingr
+{
+	position:absolute;
+	top: 354px ;
+	left: 188px ;
+	width: 900px;
+	height: 380px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 01**************/
+#img01_sld_02_it_Ingr
+{
+	position:absolute;
+	top: 250px;
+	left: 234px;
+	width: 458px;
+	height: 623px;
+	z-index: -2;
+}
+
+#txt02_sld_02_it_Ingr
+{
+	position:absolute;
+	top: 316px ;
+	left: 680px ;
+	width: 400px;
+	height: 450px;
+	font-family: OliveaLight;
+	font-size: 1.1em ;
+	text-align: left;
+	line-height:1.2em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+
+/************Slide 03**************/
+#img01_sld_03_it_Ingr
+{
+	position:absolute;
+	top: 232px;
+	left: 112.5px;
+	width: 1055px;
+	height: 606px;
+	z-index: -2;
+}
+
+#img02_sld_03_it_Ingr
+{
+	position:absolute;
+	top: 276px;
+	left: 204px;
+	width: 393px;
+	height: 172px;
+	z-index: -1;
+}
+
+#img03_sld_03_it_Ingr
+{
+	position:absolute;
+	top: 557px;
+	left: 204px;
+	width: 393px;
+	height: 172px;
+	z-index: -1;
+}
+
+#txt01_sld_03_it_Ingr
+{
+	position:absolute;
+	top: 500px ;
+	left: 680px ;
+	width: 400px;
+	height: 450px;
+	font-family: OliveaLight;
+	font-size: 1.1em ;
+	text-align: left;
+	line-height:1.2em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 04**************/
+#img01_sld_04_it_Ingr
+{
+	position:absolute;
+	top: 212.6px;
+	left: 112.5px;
+	width: 1055px;
+	height: 680px;
+	z-index: -2;
+}
+
+#img02_sld_04_it_Ingr
+{
+	position:absolute;
+	top: 230px;
+	left: 230px;
+	width: 840px;
+	height: 872px;
+	z-index: -1;
+}
+
+/************ Enfermedades y Sintomas***********/
+/************Slide 01**************/
+#img01_sld_01_it_enfer
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 345px;
+	height: 532px;
+	z-index: -1;
+}
+
+/************Slide 02**************/
+#img01_sld_02_it_enfer
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 475px;
+	height: 232px;
+	z-index: -1;
+}
+
+/************Slide 03**************/
+#txt02_sld_03_it_Ingr
+{
+	position:absolute;
+	top: 249px ;
+	left: 188px ;
+	width: 900px;
+	height: 380px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 04**************/
+#img01_sld_04_it_enfer
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 359px;
+	height: 340px;
+	z-index: -1;
+}
+
+/************Slide 05**************/
+#img01_sld_05_it_enfer
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 289px;
+	height: 457px;
+	z-index: -1;
+}
+
+/************Slide 06**************/
+#img01_sld_06_it_enfer
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 787px;
+	height: 268px;
+	z-index: -1;
+}
+
+/************Slide 07**************/
+#img01_sld_07_it_enfer
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 304px;
+	height: 544px;
+	z-index: -1;
+}
+
+/************Slide 08**************/
+#img01_sld_08_it_enfer
+{
+	position:absolute;
+	bottom: 189.4px;
+	right: 164.3px;
+	width: 706px;
+	height: 278px;
+	z-index: -1;
+}
+
+
+
+/**********************************************
+Hipoglos Informacion de la marca
+***********************************************/
+
+/************Slide 01**************/
+#img01_sld_01_inf_Mrc
+{
+	position:absolute;
+	top: 356px ;
+	left: 359.5px ;
+	width: 589px;
+	height: 411px;
+	z-index: -2;
+}
+
+#img02_sld_01_inf_Mrc
+{
+	position:absolute;
+	top: 181px ;
+	left: 203.4px ;
+	width: 343px;
+	height: 343px;
+	z-index: -1;
+}
+
+#img03_sld_01_inf_Mrc
+{
+	position:absolute;
+	top: 285.8px ;
+	left: 721.2px ;
+	width: 279px;
+	height: 347px;
+	z-index: -1;
+}
+
+#img04_sld_01_inf_Mrc
+{
+	position:absolute;
+	top: 631px ;
+	left: 173px ;
+	width: 569px;
+	height: 206px;
+	z-index: -1;
+}
+
+#img05_sld_01_inf_Mrc
+{
+	position:absolute;
+	bottom: 138px ;
+	right: 0px ;
+	width: 401px;
+	height: 133px;
+	z-index: -1;
+}
+
+
+/************Slide 02**************/
+#img01_sld_02_inf_Mrc
+{
+	position:absolute;
+	top: 220.6px ;
+	left: 118.8px ;
+	width: 258px;
+	height: 270px;
+	z-index: -2;
+}
+
+#img02_sld_02_inf_Mrc
+{
+	position:absolute;
+	top: 220.6px ;
+	left: 375.5px ;
+	width: 258px;
+	height: 270px;
+	z-index: -1;
+}
+
+#img03_sld_02_inf_Mrc
+{
+	position:absolute;
+	top: 500px ;
+	left: 118.8px ;
+	width: 258px;
+	height: 270px;
+	z-index: -1;
+}
+
+#img04_sld_02_inf_Mrc
+{
+	position:absolute;
+	top: 500px ;
+	left: 375.5px ;
+	width: 258px;
+	height: 270px;
+	z-index: -1;
+}
+
+#img05_sld_02_inf_Mrc
+{
+	position:absolute;
+	top: 308px ;
+	left: 675px ;
+	width: 512px;
+	height: 477px;
+	z-index: -1;
+}
+
+#txt01_sld_02_inf_Mrc
+{
+	position:absolute;
+	top: 222px ;
+	left: 700px ;
+	width: 455px;
+	height: 77px;
+	z-index: -1;
+	font-family: VAGRoundedBold;
+	font-size: 1.5em ;
+	text-align:center;
+	color: #DA891F ;
+	line-height: 1.5em ;
+}
+
+
+/************Slide 03**************/
+#txt01_sld_03_inf_Mrc
+{
+	position:absolute;
+	top: 387px ;
+	left: 108px ;
+	width: 350px ;
+	height: 161px ;
+	z-index: -1;
+	
+	font-size: 1.5em ;
+	text-align:left;
+	color: #333333 ;
+	line-height: 1.5em ;
+}
+
+#img01_sld_03_inf_Mrc
+{
+	position:absolute;
+	top: 135px ;
+	left: 500px ;
+	width: 258px;
+	height: 270px;
+	z-index: -2;
+}
+
+#img02_sld_03_inf_Mrc
+{
+	position:absolute;
+	top: 383px ;
+	left: 500px ;
+	width: 258px;
+	height: 270px;
+	z-index: -1;
+}
+
+#img03_sld_03_inf_Mrc
+{
+	position:absolute;
+	top: 631px ;
+	left: 500px ;
+	width: 258px;
+	height: 270px;
+	z-index: -1;
+}
+
+
+/************Slide 04**************/
+/*BaseGray*/
+#img01_sld_04_inf_Mrc
+{
+	position:absolute;
+	top: 234px;
+	left: 113.8px;
+	width: 1055px;
+	height: 653px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Banner*/
+#img02_sld_04_inf_Mrc
+{
+	position:absolute;
+	top: 233px ;
+	left: 171px ;
+	width: 944px;
+	height: 163px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_04_inf_Mrc
+{
+	position:absolute;
+	bottom: 73px;
+	right: 164.4px;
+	width: 1055px;
+	height: 653px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Box Text*/
+#txt02_sld_04_inf_Mrc
+{
+	position:absolute;
+	top: 470px ;
+	left: 250px ;
+	width: 400px;
+	height: 380px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 05**************/
+/*Grafico*/
+#img01_sld_05_inf_Mrc
+{
+	position:absolute;
+	top: 360.3px;
+	left: 202.6px;
+	width: 870px;
+	height: 412px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+/************Slide 06**************/
+/*Grafico*/
+#img01_sld_06_inf_Mrc
+{
+	position:absolute;
+	top: 416px;
+	left: 705px;
+	width: 400px;
+	height: 255px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+/*Box Text*/
+#txt02_sld_06_inf_Mrc
+{
+	position:absolute;
+	top: 416px ;
+	left: 250px ;
+	width: 400px;
+	height: 380px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 07**************/
+/*Grafico*/
+#img01_sld_07_inf_Mrc
+{
+	position:absolute;
+	top: 267.7px;
+	left: 205.5px;
+	width: 434px;
+	height: 560px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img02_sld_07_inf_Mrc
+{
+	position:absolute;
+	top: 267.7px;
+	left: 638.5px;
+	width: 434px;
+	height: 560px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+/*Box Text2*/
+#txt02_sld_07_inf_Mrc
+{
+	position:absolute;
+	top: 505px ;
+	left: 274.5px ;
+	width: 297px;
+	height: 256px;
+	
+	font-size: 1.25em ;
+	text-align: center;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text3*/
+#txt03_sld_07_inf_Mrc
+{
+	position:absolute;
+	top: 505px ;
+	left: 706.6px ;
+	width: 297px;
+	height: 256px;
+	
+	font-size: 1.25em ;
+	text-align: center;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 08**************/
+/*Box Text2*/
+#txt02_sld_08_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 274.5px ;
+	width: 297px;
+	height: 256px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text3*/
+#txt03_sld_08_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 706.6px ;
+	width: 297px;
+	height: 256px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 09**************/
+/*Grafico*/
+#img01_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 271.3px;
+	left: 171px;
+	width: 945px;
+	height: 165px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img02_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 428px;
+	left: 171px;
+	width: 945px;
+	height: 379px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+/*Box Text1*/
+#txt01_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 608px ;
+	left: 223px ;
+	width: 112px;
+	height: 280px;
+	
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text2*/
+#txt02_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 355px ;
+	width: 112px;
+	height: 280px;
+	
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text3*/
+#txt03_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 465px ;
+	width: 112px;
+	height: 280px;
+	
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text4*/
+#txt04_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 595.4px ;
+	width: 112px;
+	height: 280px;
+	
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text5*/
+#txt05_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 723px ;
+	width: 112px;
+	height: 280px;
+	
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text6*/
+#txt06_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 856.5px ;
+	width: 112px;
+	height: 280px;
+	
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text7*/
+#txt07_sld_09_inf_Mrc
+{
+	position:absolute;
+	top: 440px ;
+	left: 987px ;
+	width: 112px;
+	height: 280px;
+	
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/**********************************************
+Hipoglos Informacion Tecnica
+***********************************************/
+/************Anatomia y Fisiologia***********/
+/************Main**************/
+#img01_sld_01_infoTecH
+{
+	position:absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 584px;
+	height: 635px;
+	z-index: -1;
+}
+
+/************Anatomia Slide 01**************/
+/*Grafico*/
+#img01_sld_01_infoTecH_A
+{
+	position:absolute;
+	top: 416px;
+	left: 705px;
+	width: 379px;
+	height: 358px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+/************Enfermedades Slide 01**************/
+/*Grafico*/
+#img01_sld_04_infoTecH_E
+{
+	position:absolute;
+	top: 234px;
+	left: 171px;
+	width: 946px;
+	height: 575px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Box Text*/
+#txt01_sld_01_infoTecH_E
+{
+	position:absolute;
+	top: 400px ;
+	left: 250px ;
+	width: 400px;
+	height: 380px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Enfermedades Slide 02**************/
+/*Box Text*/
+#txt01_sld_02_infoTecH_E
+{
+	position:absolute;
+	top: 400px ;
+	left: 250px ;
+	width: 614px;
+	height: 390px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Enfermedades Slide 05**************/
+/*Grafico*/
+#img01_sld_05_infoTecH_A
+{
+	position:absolute;
+	top: 564px;
+	left: 685px;
+	width: 392px;
+	height: 190px;
+	z-index: 1;
+	overflow: hidden ;
+}
+
+
+/**********************************************
+Vicks Informacion Tecnica
+***********************************************/
+/************Ingredientes Activos***********/
+/************Slide 01**************/
+/*baseGray*/
+#img01_sld_01_infoTecV_A
+{
+	position:absolute;
+	top: 234px;
+	left: 114px;
+	width: 1055px;
+	height: 606px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Graphics*/
+#img02_sld_01_infoTecV_A
+{
+	position:absolute;
+	bottom: 195px;
+	right: 164.3px;
+	width: 383px;
+	height: 180px;
+	z-index: -1;
+}
+
+#txt01_sld_01_infoTecV_A
+{
+	position:absolute;
+	top: 249px ;
+	left: 188px ;
+	width: 900px;
+	height: 175px;
+	font-family: OliveaBold;
+	font-size: 2em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+	text-shadow: 0.1em 0.1em 0.05em #555;
+	/*background-color: #FFF;*/
+}
+
+#txt02_sld_01_infoTecV_A
+{
+	position:absolute;
+	top: 300px ;
+	left: 188px ;
+	width: 900px;
+	height: 380px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 02**************/
+/*Graphics*/
+#img02_sld_02_infoTecV_A
+{
+	position:absolute;
+	top: 273px;
+	left: 193px;
+	width: 904px;
+	height: 462px;
+	z-index: 1;
+}
+
+/*Texto 1*/
+#txt01_sld_02_infoTecV_A
+{
+	position:absolute;
+	top: 292px ;
+	left: 224px ;
+	width: 180px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:2.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 2*/
+#txt02_sld_02_infoTecV_A
+{
+	position:absolute;
+	top: 292px ;
+	left: 424px ;
+	width: 422px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:2.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 3*/
+#txt03_sld_02_infoTecV_A
+{
+	position:absolute;
+	top: 282px ;
+	left: 914px ;
+	width: 180px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:2.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 03**************/
+/*Graphics*/
+#img02_sld_03_infoTecV_A
+{
+	position:absolute;
+	top: 273px;
+	left: 193px;
+	width: 904px;
+	height: 410px;
+	z-index: 1;
+}
+
+/************Slide 06**************/
+/*Graphics*/
+#img02_sld_06_infoTecV_A
+{
+	position:absolute;
+	top: 426px;
+	left: 193px;
+	width: 904px;
+	height: 153px;
+	z-index: 1;
+}
+
+/*Texto 1*/
+#txt01_sld_06_infoTecV_A
+{
+	position:absolute;
+	top: 438px ;
+	left: 224px ;
+	width: 180px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:2.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 2*/
+#txt02_sld_06_infoTecV_A
+{
+	position:absolute;
+	top: 438px ;
+	left: 424px ;
+	width: 422px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:2.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 2*/
+#txt02b_sld_06_infoTecV_A
+{
+	position:absolute;
+	top: 500px ;
+	left: 424px ;
+	width: 422px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 3*/
+#txt03_sld_06_infoTecV_A
+{
+	position:absolute;
+	top: 438px ;
+	left: 914px ;
+	width: 180px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:2.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 09**************/
+#txt02_sld_09_infoTecV_A
+{
+	position:absolute;
+	top: 250px ;
+	left: 195px ;
+	width: 900px;
+	height: 380px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 2c*/
+#txt02c_sld_09_infoTecV_A
+{
+	position:absolute;
+	top: 570px ;
+	left: 424px ;
+	width: 422px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 2d*/
+#txt02d_sld_09_infoTecV_A
+{
+	position:absolute;
+	top: 623px ;
+	left: 424px ;
+	width: 422px ;
+	height: 450px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Enfermedades ***********/
+/************Slide 01**************/
+/*baseGray*/
+#img01_sld_01_infoTecV_E
+{
+	position:absolute;
+	top: 247px;
+	left: 98px;
+	width: 260px;
+	height: 505px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Graphics*/
+#img02_sld_01_infoTecV_E
+{
+	position:absolute;
+	top: 247px;
+	left: 373px;
+	width: 260px;
+	height: 505px;
+	z-index: -1;
+}
+
+/*Graphics*/
+#img03_sld_01_infoTecV_E
+{
+	position:absolute;
+	top: 247px;
+	left: 647px;
+	width: 260px;
+	height: 505px;
+	z-index: -1;
+}
+
+/*Graphics*/
+#img04_sld_01_infoTecV_E
+{
+	position:absolute;
+	top: 247px;
+	left: 921px;
+	width: 260px;
+	height: 505px;
+	z-index: -1;
+}
+
+/*Graphics*/
+#img05_sld_01_infoTecV_E
+{
+	position:absolute;
+	top: 648px;
+	left: 273px;
+	width: 733px;
+	height: 80px;
+	z-index: 1;
+}
+
+
+/************Slide 02**************/
+/*Grafico*/
+#img05_sld_02_infoTecV_E
+{
+	position:absolute;
+	top: 292px;
+	left: 671px;
+	width: 348px;
+	height: 416px;
+	z-index: 1;
+}
+
+/*Box Text*/
+#txt05_sld_02_infoTecV_E
+{
+	position:absolute;
+	top: 350px ;
+	left: 235px ;
+	width: 400px;
+	height: 380px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 03**************/
+#txt01_sld_03_infoTecV_E
+{
+	position:absolute;
+	top: 270px ;
+	left: 235px ;
+	width: 815px;
+	height: 460px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 04**************/
+/*Grafico*/
+#img01_sld_04_infoTecV_E
+{
+	position:absolute;
+	top: 440px;
+	left: 300px;
+	width: 193px;
+	height: 195px;
+	z-index: 1;
+}
+
+/*Grafico2*/
+#img02_sld_04_infoTecV_E
+{
+	position:absolute;
+	top: 440px;
+	left: 540px;
+	width: 191px;
+	height: 199px;
+	z-index: 1;
+}
+
+/*Grafico3*/
+#img03_sld_04_infoTecV_E
+{
+	position:absolute;
+	top: 440px;
+	left: 795px;
+	width: 157px;
+	height: 207px;
+	z-index: 1;
+}
+
+/************Slide 06**************/
+/*Graphics*/
+#img01_sld_06_infoTecV_E
+{
+	position:absolute;
+	top: 339px;
+	left: 192px;
+	width: 904px;
+	height: 318px;
+	z-index: 1;
+}
+
+/*Texto 1*/
+#txt01_sld_06_infoTecV_E
+{
+	position:absolute;
+	top: 350px ;
+	left: 224px ;
+	width: 435px ;
+	height: 250px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.4em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 2*/
+#txt02_sld_06_infoTecV_E
+{
+	position:absolute;
+	top: 350px ;
+	left: 676px ;
+	width: 435px ;
+	height: 250px ;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.4em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 08**************/
+/*Texto 1*/
+#txt01_sld_08_infoTecV_E
+{
+	position:absolute;
+	top: 288.5px ;
+	left: 203.5px ;
+	width: 435px ;
+	height: 250px ;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.57em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 2*/
+#txt02_sld_08_infoTecV_E
+{
+	position:absolute;
+	top: 288.5px ;
+	left: 441.5px ;
+	width: 435px ;
+	height: 250px ;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.57em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 3*/
+#txt03_sld_08_infoTecV_E
+{
+	position:absolute;
+	top: 288.5px ;
+	left: 677.5px ;
+	width: 435px ;
+	height: 250px ;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.57em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Texto 4*/
+#txt04_sld_08_infoTecV_E
+{
+	position:absolute;
+	top: 288.5px ;
+	left: 929.5px ;
+	width: 435px ;
+	height: 250px ;
+	font-family: OliveaLight;
+	font-size: 1em ;
+	text-align: left;
+	line-height:1.57em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/**********************************************
+VICKS Informacion de la Marca
+***********************************************/
+/************Slide 01***********/
+/*baseGray*/
+#img01_sld_01_infoMarV
+{
+	position:absolute;
+	top: 172px;
+	left: 38.5px;
+	width: 1204px;
+	height: 696px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Graphics*/
+#img02_sld_01_infoMarV
+{
+	position:absolute;
+	bottom: 276px;
+	right: 104px;
+	width: 335px;
+	height: 215px;
+	z-index: -1;
+}
+
+#txt01_sld_01_infoMarV
+{
+	position:absolute;
+	top: 300px ;
+	left: 188px ;
+	width: 900px;
+	height: 380px;
+	font-family: OliveaLight;
+	font-size: 2em ;
+	text-align: left;
+	line-height:2.5em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 02***********/
+/*Graphics*/
+#img01_sld_02_infoMarV
+{
+	position:absolute;
+	bottom: 0px;
+	right: 36px;
+	width: 1178px;
+	height: 564px;
+	z-index: -1;
+}
+
+#txt01_sld_02_infoMarV
+{
+	position:absolute;
+	top: 220px ;
+	left: 270px ;
+	width: 950px;
+	height: 225px;
+	font-family: OliveaLight;
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.5em;
+	color: #272628 ;
+	z-index: 1;
+}
+
+/****************Info de la Marca Vicks Vaporru****************/
+/*Image*/
+.vick_vaporru_img
+{
+	position: absolute ;
+	
+	top: 172px ;
+	left: 37px ;
+	
+	width: 1204px ;
+	height: 695px ;
+	
+	overflow: hidden ;
+}
+
+
+/*************************
+Educación al Farmacéutico
+*************************/
+.brochure_next
+{
+	position: absolute ;
+	
+	bottom: 100px ;
+	left: 50px ;
+	
+	z-index: 10
+}
+
+/******************Slide 01******************/
+/*Text 01*/
+#all_leftText_educFarma_s1_01
+{	
+	top: 250px ;
+	
+	width: 850px ;
+	
+	z-index: 1 ;
+}
+
+/*Text 02*/
+#all_leftText_educFarma_s1_02
+{	
+	top: 340px ;
+	z-index: 1 ;
+}
+
+/*Text 03*/
+#all_leftText_educFarma_s1_03
+{	
+	top: 375px ;
+	
+	width: 750px ;
+	z-index: 1 ;
+}
+
+/*Text 04*/
+#all_leftText_educFarma_s1_04
+{	
+	top: 590px ;
+	z-index: 1 ;
+}
+
+/*Text 05*/
+#all_leftText_educFarma_s1_05
+{	
+	top: 625px ;
+	z-index: 1 ;
+}
+
+/******************Slide 02******************/
+/*Text 01*/
+#all_leftText_educFarma_s2_01
+{	
+	top: 250px ;
+	z-index: 1 ;
+}
+
+/*Text 02*/
+#all_leftText_educFarma_s2_02
+{	
+	top: 290px ;
+	z-index: 1 ;
+}
+
+/*Text 03*/
+#all_leftText_educFarma_s2_03
+{	
+	top: 460px ;
+	z-index: 1 ;
+}
+
+/*Text 04*/
+#all_leftText_educFarma_s2_04
+{	
+	top: 510px ;
+	z-index: 1 ;
+}
+
+/******************Slide 03******************/
+/*Image 01*/
+.img_educaFarma_s3_01
+{	
+	position: absolute ;
+	
+	top: 250px ;
+	left: 150px ;
+}
+
+/*Image 02*/
+.img_educaFarma_s3_02
+{	
+	position: absolute ;
+	
+	top: 250px ;
+	left: 675px ;
+}
+
+/*Image 03*/
+.img_educaFarma_s3_right
+{	
+	position: absolute ;
+	
+	top: 250px ;
+	left: 850px ;
+}
+
+/******************Slide 04******************/
+/*Image 01*/
+#all_leftText_educFarma_s4_01
+{	
+	position: absolute ;
+	
+	top: 250px ;
+	left: 500px ;
+}
+
+/*Image 02*/
+#all_leftText_educFarma_s4_02
+{	
+	position: absolute ;
+	
+	top: 300px ;
+	left: 525px ;
+	
+	width: 500px ;
+}
+
+/****************Norma de Evaluacion****************/
+/*Image*/
+.normaEvaluacion_img
+{
+	position: absolute ;
+	
+	top: 275px ;
+	left: 120px ;
+	
+	width: 1040px ;
+	height: 620px ;
+	
+	overflow: hidden ;
+}
+
+/*Texto*/
+.txtnormaEvaluacion
+{
+	position: absolute ;
+	
+	top: 850px ;
+	left: 140px ;
+	
+	width: 1000px ;
+	
+	text-align: center ;
+	
+	margin-right: 5px ;
+	
+	font-size: 1.25em ;
+}
+
+	/*ul , li*/
+.txtnormaEvaluacion ul , li
+{
+	display: inline ;
+	margin: 5px ;
+	
+	list-style: none ;
+}
+
+#normaEvaluacion_bottom_txt
+{
+	top: 225px ;
+	
+	font-size: 1.1em ;
+}
+
+/*Slides Como educar al pharma*/
+/*Left Image*/
+.img_educaPharma_left
+{	
+	position: absolute ;
+	
+	top: 250px ;
+	left: 100px ;
+}
+
+/*Text Title educa*/
+.textTitleEduca
+{	
+	position: absolute ;
+	
+	font-size: 1.25em ;
+	
+	top: 250px ;
+	left: 525px ;
+}
+
+/*Text content educa*/
+.textContentEduca
+{	
+	position: absolute ;
+	
+	font-size: 1.15em ;
+	
+	font-family: OliveaLight ;
+	
+	top: 300px ;
+	left: 550px ;
+}
+
+/*Image que decir*/
+.img_educaPharma_queDecir
+{
+	position: absolute ;
+	
+	bottom: 0px ;
+	left: 525px ;
+}
+
+
+/**********************************************
+PEPTOBISMOL Informacion de la Marca
+***********************************************/
+/************Slide 02**************/
+/*Grafico*/
+#img03_sld_01_inf_Mrc_P
+{
+	position:absolute;
+	top: 356px;
+	left: 133px;
+	width: 1030px;
+	height: 176px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2
+#img04_sld_01_inf_Mrc_P
+{
+	position:absolute;
+	top: 187px;
+	left: 702px;
+	width: 246px;
+	height: 242px;
+	z-index: -1;
+	overflow: hidden ;
+	background-color: #FFF;
+}*/
+
+/*Grafico3
+#img05_sld_01_inf_Mrc_P
+{
+	position:absolute;
+	top: 530px;
+	left: 668px;
+	width: 60px;
+	height: 208px;
+	z-index: -1;
+	overflow: hidden ;
+	background-color: #FFF;
+}*/
+
+/*Head Text*/
+#txt01_sld_01_inf_Mrc_P
+{
+	position:absolute;
+	top: 575px ;
+	left: 175px ;
+	width: 465px;
+	height: 250px;
+	
+	font-size: 1.25em ;
+	text-align: right;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+	/*background-color: #FFF;*/
+}
+
+/*Box Text*/
+#txt02_sld_01_inf_Mrc_P
+{
+	position:absolute;
+	top: 575px ;
+	left: 740px ;
+	width: 400px;
+	height: 200px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+	/*background-color: #FFF;*/
+}
+
+/************Slide 03**************/
+
+/*Grafico*/
+#img03_sld_03_inf_Mrc_P
+{
+	position:absolute;
+	top: 380px;
+	left: 163px;
+	width: 495px;
+	height: 385px;
+	z-index: -1;
+	overflow: hidden ;
+	/*background-color: #DDD;*/
+}
+
+/*Grafico2*/
+#img04_sld_03_inf_Mrc_P
+{
+	position:absolute;
+	top: 234px ;
+	left: 695px ;
+	width: 474px;
+	height: 606px;
+	z-index: -1;
+	overflow: hidden ;
+	/*background-color: #DDD;*/
+}
+
+/*Grafico3
+#img05_sld_03_inf_Mrc_P
+{
+	position:absolute;
+	top: 530px;
+	left: 668px;
+	width: 60px;
+	height: 208px;
+	z-index: -1;
+	overflow: hidden ;
+	background-color: #FFF;
+}*/
+
+/*Head Text*/
+#txt01_sld_03_inf_Mrc_P
+{
+	position:absolute;
+	top: 260px ;
+	left: 177px ;
+	width: 465px;
+	height: 80px;
+	
+	font-size: 1.15em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+	/*background-color: #FFF;*/
+}
+
+/*Box Text*/
+/*#txt02_sld_03_inf_Mrc_P
+{
+	position:absolute;
+	top: 575px ;
+	left: 740px ;
+	width: 400px;
+	height: 200px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+	background-color: #FFF;
+}*/
+
+
+/**********************************************
+PEPTOBISMOL Informacion Tecnica
+***********************************************/
+/************Slide 01**************/
+
+/*Grafico*/
+#img03_sld_03_inf_Tec_P
+{
+	position:absolute;
+	top: 375px;
+	left: 180px;
+	width: 382px;
+	height: 487px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img04_sld_03_inf_Tec_P
+{
+	position:absolute;
+	top: 375px ;
+	left: 744px ;
+	width: 382px;
+	height: 487px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/************Slide 04**************/
+/*Box Text*/
+#txt01_sld_04_inf_Tec_P
+{
+	position:absolute;
+	top: 292px ;
+	left: 205px ;
+	width: 500px;
+	height: 25px;
+	
+	font-size: 1.5em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 06**************/
+/*Box Text*/
+#txt01_sld_06_inf_Tec_P
+{
+	position:absolute;
+	top: 292px ;
+	left: 205px ;
+	width: 600px;
+	height: 310px;
+	
+	font-size: 1.3em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 05**************/
+/*Box Text*/
+#txt01_sld_05_inf_Tec_P
+{
+	position:absolute;
+	top: 292px ;
+	left: 150px ;
+	width: 600px;
+	height: 150px;
+	
+	font-size: 1.3em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Grafico*/
+#img01_sld_05_inf_Tec_P
+{
+	position:absolute;
+	top: 476px ;
+	left: 132.5px ;
+	width: 229px;
+	height: 310px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img02_sld_05_inf_Tec_P
+{
+	position:absolute;
+	top: 476px ;
+	left: 408px ;
+	width: 424px;
+	height: 310px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_05_inf_Tec_P
+{
+	position:absolute;
+	top: 476px ;
+	left: 684px ;
+	width: 474px;
+	height: 606px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+
+
+
+
+/**********************************************
+Clearblue
+***********************************************/
+/*Logo*/
+.clearblue_logoClearblue
+{
+	position: absolute ;
+	
+	top: 35px ;
+	left: 15px ;
+	
+	z-index: 10 ;
+}
+
+/***********
+Brochure
+***********/
+/******************Slide 001******************/
+/*Big title*/
+.clearblue_bigTitle
+{
+	position: absolute ;
+	
+	top: 150px ;
+	left: 100px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1.5em ;
+	
+	background: rgba(100,100,100,0) ;
+}
+
+/*Second Phrase*/
+.clearblue_secondPhrase
+{
+	position: absolute ;
+	
+	top: 300px ;
+	left: 200px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 2em ;
+}
+
+/*Image Sistema*/
+.clearblue_bigBack_image
+{
+	position: absolute ;
+	
+	bottom: 0px ;
+	left: 0px ;
+}
+
+/*Image Sistema*/
+.clearblue_pregnantText
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 800px ;
+	
+	z-index: 2 ;
+}
+
+/*Ya no text*/
+.clearblue_yaNo_txt
+{
+	position: absolute ;
+	
+	bottom: 250px ;
+	right: 50px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 2em ;
+	color: #FFF ;
+	
+	z-index: 2 ;
+}
+
+/*Product box 01*/
+.clearblue_productBox_01
+{
+	position: absolute ;
+	
+	bottom: 80px ;
+	right: 50px ;
+	
+	z-index: 2 ;
+}
+
+/******************Slide 002******************/
+/*Product box 02*/
+.clearblue_productBox_02
+{
+	position: absolute ;
+	
+	top: 50px ;
+	left: 500px ;
+	
+	z-index: 2 ;
+}
+
+/*Presentamos*/
+.clearblue_Presentamos_txt
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 525px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1.25em ;
+	color: #002855 ;
+	
+	z-index: 2 ;
+}
+
+/*Clearblue DIGITAL*/
+.clearblue_ClearblueDigital_txt
+{
+	position: absolute ;
+	
+	top: 475px ;
+	left: 650px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 2em ;
+	color: #002855 ;
+	
+	z-index: 2 ;
+}
+
+/*Bullets*/
+	/*01*/
+.clearblue_bullet_s2_01
+{
+	position: absolute ;
+	
+	top: 550px ;
+	left: 450px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 300px ;
+	
+	z-index: 2 ;
+}
+
+	/*li*/
+.clearblue_bullet_s2_01 li
+{
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+}
+
+		/*Images*/
+			/*01*/
+.clearblue_bullet_s2_01_image_01
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 450px ;
+		
+	z-index: 2 ;
+}
+
+			/*02*/
+.clearblue_bullet_s2_01_image_02
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 550px ;
+	
+	z-index: 2 ;
+}
+
+			/*03*/
+.clearblue_bullet_s2_01_image_03
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 650px ;
+	
+	z-index: 2 ;
+}
+
+	/*02*/
+.clearblue_bullet_s2_02
+{
+	position: absolute ;
+	
+	top: 550px ;
+	left: 850px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 300px ;
+	
+	z-index: 2 ;
+}
+
+		/*li*/
+.clearblue_bullet_s2_02  li
+{
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+}
+
+		/*Images*/
+			/*01*/
+.clearblue_bullet_s2_02_image_01
+{
+	position: absolute ;
+	
+	top: 605px ;
+	left: 850px ;
+		
+	z-index: 2 ;
+}
+
+			/*02*/
+.clearblue_bullet_s2_02_image_02
+{
+	position: absolute ;
+	
+	top: 605px ;
+	left: 950px ;
+	
+	z-index: 2 ;
+}
+
+		/*Additional text*/
+.clearblue_bullet_s2_02_extraText
+{
+	position: absolute ;
+	
+	top: 690px ;
+	left: 850px ;
+	
+	font-family: HelveticaLight ;
+	font-size: .85em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 300px ;
+	
+	z-index: 2 ;
+}
+
+	/*03*/
+.clearblue_bullet_s2_03
+{
+	position: absolute ;
+	
+	top: 750px ;
+	left: 450px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 300px ;
+	
+	z-index: 2 ;
+}
+
+		/*li*/
+.clearblue_bullet_s2_03 li
+{
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+}
+
+		/*Additional text*/
+.clearblue_bullet_s2_03_extraText
+{
+	position: absolute ;
+	
+	top: 775px ;
+	left: 450px ;
+	
+	font-family: HelveticaLight ;
+	font-size: .85em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 300px ;
+	
+	z-index: 2 ;
+}
+
+	/*04*/
+.clearblue_bullet_s2_04
+{
+	position: absolute ;
+	
+	top: 750px ;
+	left: 850px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 300px ;
+	
+	z-index: 2 ;
+}
+
+		/*li*/
+.clearblue_bullet_s2_04 li
+{
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+}
+
+/******************Slide 003******************/
+/*Chart Pregnancy*/
+.clearblue_chart_pregnancy
+{
+	position: absolute ;
+	
+	top: 175px ;
+	left: 100px ;
+	
+	overflow: hidden ;
+}
+
+/*Pregunta 01*/
+.clearblue_s3_question_01
+{
+	position: absolute ;
+	
+	top: 50px ;
+	left: 400px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 2em ;
+	text-align: left ;
+}
+
+	/*Bullets*/
+		/*01*/
+.clearblue_bullet_s3_01
+{
+	position: absolute ;
+	
+	top: 100px ;
+	left: 425px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 400px ;
+	
+	z-index: 2 ;
+}
+	
+			/*li*/
+.clearblue_bullet_s3_01 li
+{
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+}
+
+		/*02*/
+.clearblue_bullet_s3_02
+{
+	position: absolute ;
+	
+	top: 150px ;
+	left: 425px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 400px ;
+	
+	z-index: 2 ;
+}
+
+			/*li*/
+.clearblue_bullet_s3_02 li
+{
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+}
+
+		/*03*/
+.clearblue_bullet_s3_03
+{
+	position: absolute ;
+	
+	top: 200px ;
+	left: 425px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 400px ;
+	
+	z-index: 2 ;
+}
+
+			/*li*/
+.clearblue_bullet_s3_03 li
+{
+	font-family: HelveticaBold ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+}
+
+/*Product Image Inner*/
+.clearblue_productoInner
+{
+	position: absolute ;
+	
+	top: 50px ;
+	left: 825px ;
+	
+	z-index: 2 ;
+}
+
+/*Pregunta 02*/
+.clearblue_s3_question_02
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 475px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 2em ;
+	color: #002855 ;
+	
+	z-index: 2 ;
+}
+
+/*Answer 02*/
+.clearblue_s3_answer_01
+{
+	position: absolute ;
+	
+	top: 500px ;
+	left: 475px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1em ;
+	color: #002855 ;
+	
+	text-align: left ;
+	
+	list-style-type: disc ;
+	
+	width: 700px ;
+	
+	z-index: 2 ;
+}
+
+	/*Images*/
+		/*01*/
+.clearblue_s3_image_01
+{
+	position: absolute ;
+	
+	top: 575px ;
+	left: 475px ;
+		
+	z-index: 2 ;
+}
+			
+			/*Clock*/
+.clearblue_s3_image_01_clock
+{
+	position: absolute ;
+	
+	top: 725px ;
+	left: 725px ;
+		
+	z-index: 3 ;
+}
+
+/*Ó*/
+.clearblue_O
+{
+	position: absolute ;
+	
+	top: 675px ;
+	left: 805px ;
+	
+	z-index: 3 ;
+}
+
+		/*02*/
+.clearblue_s3_image_02
+{
+	position: absolute ;
+	
+	top: 575px ;
+	left: 850px ;
+	
+	z-index: 2 ;
+}
+
+			/*Clock*/
+.clearblue_s3_image_02_clock
+{
+	position: absolute ;
+	
+	top: 725px ;
+	left: 1050px ;
+		
+	z-index: 3 ;
+}
+
+/******************Slide 004******************/
+/*Pareja Image*/
+.clearblue_parejaImage
+{
+	position: absolute ;
+	
+	bottom: 0px ;
+	right: 0px ;
+}
+
+/*Oval*/
+.clearblue_s4_oval
+{
+	position: absolute ;
+	
+	top: 175px ;
+	left: 100px ;
+}
+
+/*Product Image*/
+.clearblue_s4_productImage
+{
+	position: absolute ;
+	
+	top: 225px ;
+	left: 250px ;
+	
+	z-index: 2 ;
+}
+
+/*Text oval*/
+	/*01*/
+.clearblue_s4_ovalText_01
+{
+	position: absolute ;
+	
+	top: 150px ;
+	left: 350px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+	/*02*/
+.clearblue_s4_ovalText_02
+{
+	position: absolute ;
+	
+	top: 200px ;
+	left: 575px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+	/*03*/
+.clearblue_s4_ovalText_03
+{
+	position: absolute ;
+	
+	top: 350px ;
+	left: 575px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+	/*04*/
+.clearblue_s4_ovalText_04
+{
+	position: absolute ;
+	
+	top: 415px ;
+	left: 350px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+	/*05*/
+.clearblue_s4_ovalText_05
+{
+	position: absolute ;
+	
+	top: 350px ;
+	left: 125px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+	/*06*/
+.clearblue_s4_ovalText_06
+{
+	position: absolute ;
+	
+	top: 200px ;
+	left: 100px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+/*Slogan*/
+	/*Bold text*/
+.clearblue_s4_sloganBold
+{
+	position: absolute ;
+	
+	font-family: HelveticaBold ;
+	font-size: 3em ;
+	
+	text-align: left ;
+	
+	z-index: 2 ;
+}
+
+		/*01*/
+#clearblue_s4_sloganBold_01
+{
+	top: 500px ;
+	left: 150px ;
+}
+
+		/*02*/
+#clearblue_s4_sloganBold_02
+{
+	top: 500px ;
+	left: 700px ;
+}
+
+		/*03*/
+#clearblue_s4_sloganBold_03
+{
+	top: 550px ;
+	left: 175px ;
+}
+
+		/*03*/
+#clearblue_s4_sloganBold_04
+{
+	top: 550px ;
+	left: 640px ;
+}
+
+	/*Light text*/
+.clearblue_s4_sloganLight
+{
+	position: absolute ;
+	
+	font-family: HelveticaLight ;
+	font-size: 2em ;
+	
+	text-align: left ;
+	
+	z-index: 2 ;
+}
+
+		/*01*/
+#clearblue_s4_sloganLight_01
+{
+	top: 515px ;
+	left: 300px ;
+}
+
+		/*02*/
+#clearblue_s4_sloganLight_02
+{
+	top: 565px ;
+	left: 110px ;
+}
+
+		/*02*/
+#clearblue_s4_sloganLight_03
+{
+	top: 565px ;
+	left: 410px ;
+}
+
+/*Conoce más*/
+.clearblue_conoce_txt
+{
+	position: absolute ;
+	
+	bottom: 250px ;
+	left: 15px ;
+	
+	font-family: HelveticaLight ;
+	font-size: 1.25em ;
+	
+	text-align: left ;
+	
+	color: #15457A ;
+}
+
+/*Página web*/
+.clearblue_sitioWeb
+{
+	position: absolute ;
+	
+	bottom: 200px ;
+	left: 15px ;
+	
+	font-family: HelveticaBold ;
+	font-size: 2em ;
+	
+	text-align: left ;
+	
+	color: #15457A ;
+}
+
+/*Registro*/
+.clearblue_registro
+{
+	position: absolute ;
+	
+	bottom: 200px ;
+	right: 15px ;
+	
+	font-family: HelveticaLight ;
+	font-size: .9em ;
+	
+	text-align: right ;
+	
+	color: #15457A ;
+}
+
+	/*Strong*/
+.clearblue_registro strong
+{
+	font-family: HelveticaBold ;
+	font-size: .9em ;
+	
+	text-align: right ;
+	
+	color: #15457A ;
+}
+
+/*White Big Note*/
+.clearblue_bigNote
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	
+	left: 15px ;
+	
+	bottom: 75px ;
+	
+	width: 1250px ;
+	height: 100px ;
+	
+	font-family: HelveticaLight ;
+	font-size: .85em ;
+	
+	text-align: left ;
+	
+	background: rgba(255,255,255,1) ;
+	
+	border-radius: 15px ;
+	
+	overflow: hidden ;
+}
+
+/**********************************************
+Metamucil
+***********************************************/
+/*Logo*/
+.metamucil_logoMetamucil
+{
+	position: absolute ;
+	
+	top: 0px ;
+	left: 0px ;
+	
+	z-index: 10 ;
+}
+
+/*Back textos*/
+.metamucil_backContent
+{	
+	margin-top: 55px ;
+	margin-left: 40px ;
+	
+	width: 1200px ;
+	height: 850px ;
+	
+	background-image: url(../img/Metamucil/img_back_textos.png) ;
+	
+	border-radius: 20px ;
+	-moz-border-radius: 20px ;
+	-webkit-border-radius: 20px ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+	
+	overflow: hidden ;
+	
+	z-index: 1 ;
+}
+
+/*Title*/
+.metamucil_bigTitle
+{
+	position: absolute ;
+	
+	top: 75px ;
+	left: 400px ;
+	
+	font-family: OliveaBold ;
+	font-size: 2.5em ;
+	
+	text-align: left ;
+	
+	color: #72033E ;
+}
+
+/***********
+Brochure
+***********/
+/******************Slide 001******************/
+/*Bottle*/
+.metamucil_bottle
+{
+	position: absolute ;
+	
+	top: 25px ;
+	left: 400px ;
+	
+	overflow: hidden ;
+	
+	transform-origin: bottom center ;
+	-moz-transform-origin: bottom center ;
+	-webkit-transform-origin: bottom center ;
+}
+
+/*Click Aqui*/
+.metamucil_clickAqui
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 565px ;
+	
+	z-index: 5 ;
+}
+
+/*Bottle bottom*/
+.metamucil_bottle_bottom
+{
+	position: absolute ;
+	
+	top: 485px ;
+	left: 400px ;
+}
+
+/*Descubre la fibra txt*/
+.metamucil_descubreFibra_txt
+{
+	position: absolute ;
+	
+	top: 400px ;
+	left: 240px ;
+}
+
+	/*Burguer*/
+#metamucil_bottle_bottom_burguer
+{
+	z-index: 4 ;
+}
+
+	/*Metamucil*/
+#metamucil_bottle_bottom_metamucil
+{
+	z-index: 3 ;
+}
+
+	/*Phrase*/
+#metamucil_bottle_bottom_phrase
+{
+	top: 776px ;
+	z-index: 5 ;
+}
+
+/*Person Container*/
+.metamucil_person_s1_container
+{
+	position: absolute ;
+	
+	padding: 0 ;
+	
+	top: 190px ;
+	left: 402px ;
+	
+	width: 490px ;
+	height: 660px ;
+	
+	overflow: hidden ;
+}
+
+/*Person 01*/
+.metamucil_person_s1
+{
+	position: absolute ;
+	
+	top: 0px ;
+	left: 0px ;
+	
+	height: 660px ;
+	width: 490px ;
+	
+	overflow: hidden ;
+}
+
+/*Top Text*/
+.metamucil_s1_topText
+{
+	position: absolute ;
+	
+	top: 50px ;
+	left: 460px ;
+	
+	z-index: 5 ;
+}
+
+/*Notas*/
+#metamucil_notes
+{
+	bottom: 75px ;
+	
+	font-family: OliveaLight ;
+	font-size: .85em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+}
+
+/******************Slide 002******************/
+/*Product*/
+.metamucil_s2_producto
+{
+	position: absolute ;
+	
+	bottom: 125px ;
+	right: 50px ;
+}
+
+/*Beneficios*/
+.metamucil_5beneficios
+{
+	position: absolute ;
+	
+	top: 175px ;
+	right: 39px ;
+}
+
+/*Bullets Images*/
+.metamucil_bullet_Image
+{
+	position: absolute ;
+	
+	width: 45px ;
+	height: 45px ;
+	
+	overflow: hidden ;
+	
+	z-index: 2 ;
+}
+
+	/*01*/
+#metamucil_bullet_image_01
+{
+	top: 350px ;
+	left: 100px ;
+}
+
+	/*02*/
+#metamucil_bullet_image_02
+{
+	top: 425px ;
+	left: 100px ;
+}
+
+	/*03*/
+#metamucil_bullet_image_03
+{
+	top: 500px ;
+	left: 100px ;
+}
+
+	/*04*/
+#metamucil_bullet_image_04
+{
+	top: 575px ;
+	left: 100px ;
+}
+
+	/*05*/
+#metamucil_bullet_image_05
+{
+	top: 650px ;
+	left: 100px ;
+}
+
+/*Bullets Text*/
+.metamucil_bullet_Text
+{
+	position: absolute ;
+	
+	width: 350px ;
+	
+	font-family: OliveaBold ;
+	font-size: 1.5em ;
+	
+	text-align: left ;
+	
+	overflow: hidden ;
+	
+	z-index: 2 ;
+}
+
+	/*Text*/
+		/*01*/
+#metamucil_bullet_text_01
+{
+	top: 350px ;
+	left: 160px ;
+}
+
+		/*02*/
+#metamucil_bullet_text_02
+{
+	top: 425px ;
+	left: 160px ;
+}
+
+		/*03*/
+#metamucil_bullet_text_03
+{
+	top: 500px ;
+	left: 160px ;
+}
+
+		/*04*/
+#metamucil_bullet_text_04
+{
+	top: 575px ;
+	left: 160px ;
+}
+
+		/*05*/
+#metamucil_bullet_text_05
+{
+	top: 650px ;
+	left: 160px ;
+}
+
+/*Notas*/
+#metamucil_notes_s2
+{
+	position: absolute ;
+	bottom: 65px ;
+	
+	font-family: OliveaLight ;
+	font-size: .85em ;
+	
+	text-align: center ;
+	
+	color: #72033E ;
+}
+
+/******************Slide 003******************/
+/*Explain Text*/
+.metamucil_s3_explainText
+{
+	position: absolute ;
+	
+	width: 1150px ;
+	
+	top: 200px ;
+	left: 65px ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.75em ;
+	text-align: center ;
+	
+	overflow: hidden ;
+}
+
+/*Difference Text*/
+.metamucil_differenceText
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	
+	width: 545px ;
+	height: 75px ;
+	
+	border-top-left-radius: 15px ;
+	border-top-right-radius: 15px ;
+	
+	background-color: #939598 ;
+	
+	overflow: hidden ;
+	
+	font-family: OliveaLight ;
+	font-size: 1.15em ;
+	color: #FFF ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+	/*01*/
+#metamucil_differenceText_01
+{
+	top: 350px ;
+	left: 80px ;
+}
+
+	/*02*/
+#metamucil_differenceText_02
+{
+	top: 350px ;
+	right: 80px ;
+}
+
+/*Difference Image*/
+.metamucil_differenceImage
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	
+	width: 545px ;
+	height: 235px ;
+	
+	
+	overflow: hidden ;
+	
+	z-index: 3 ;
+}
+
+	/*01*/
+#metamucil_differenceImage_01
+{
+	top: 450px ;
+	left: 80px ;
+}
+
+	/*02*/
+#metamucil_differenceImage_02
+{
+	top: 450px ;
+	right: 80px ;
+}
+
+/******************Slide 004******************/
+/*Instructions*/
+.metamucil_s4_instructions
+{
+	position: absolute ;
+	
+	width: 180px ;
+	height: 315px ;
+	
+	top: 175px ;
+		
+	overflow: hidden ;
+}
+
+	/*01*/
+#metamucil_s4_instructions_01
+{
+	left: 85px ;
+}
+
+	/*02*/
+#metamucil_s4_instructions_02
+{
+	left: 275px ;
+}
+
+	/*03*/
+#metamucil_s4_instructions_03
+{
+	left: 465px ;
+}
+
+/*Recomienda*/
+.metamucil_3recomienda
+{
+	position: absolute ;
+	
+	top: 175px ;
+	right: 39px ;
+}
+
+/*Bullets*/
+.metamucil_3recomienda_bullets
+{
+	position: absolute ;
+	
+	font-family: OliveaBold ;
+	font-size: 1.2em ;
+	
+	width: 450px ;
+	
+	color: #72033E ;
+	
+	z-index: 3 ;
+}
+
+	/*li*/
+.metamucil_3recomienda_bullets li
+{
+	margin-top: 10px ;
+	font-family: OliveaBold ;
+	font-size: 1em ;
+		
+	color: #F37320 ;
+}
+
+	/*Div*/
+.metamucil_3recomienda_bullets li div
+{
+	font-family: OliveaBold ;
+	font-size: 1em ;
+	color: #72033E ;
+}
+
+	/*01*/
+#metamucil_3recomienda_bullets_01
+{
+	top: 225px ;
+	left: 725px ;
+}
+
+/*Back Footer*/
+.metamucil_backFooter
+{
+	position: absolute ;
+	
+	bottom: 175px ;
+	left: 85px ;
+	
+	width: 1090px ;
+	
+	overflow: hidden ;
+	
+	opacity: .75 ;
+	
+	z-index: 2 ;	
+}
+
+/*Product Image*/
+.metamucil_s4_productImage
+{
+	position: absolute ;
+	
+	bottom: 150px ;
+	right: 85px ;
+
+	z-index: 3 ;
+}
+
+/*Product Logo*/
+.metamucil_s4_productLogo
+{
+	position: absolute ;
+	
+	bottom: 150px ;
+	left: 70px ;
+
+	z-index: 3 ;
+}
+
+/*Mucho Más*/
+.metamucil_s4_muchoMas_txt
+{
+	position: absolute ;
+	
+	bottom: 275px ;
+	left: 400px ;
+	
+	font-family: OliveaBold ;
+	font-size: 2.5em ;
+	
+	text-align: left ;
+	
+	text-shadow: 0px 0px 5px #FFFFFF ;
+	-moz-text-shadow: 0px 0px 5px #FFFFFF ;
+	-webkit-text-shadow: 0px 0px 5px #FFFFFF ;
+	
+	color: #72033E ;
+
+	z-index: 4 ;
+}
+
+
+/**********************************************
+Pepto-Bismol
+***********************************************/
+
+/*Logo*/
+.peptoBismol_logoPeptoBismol
+{
+	position: absolute ;
+	
+	top: 10px ;
+	left: 50px ;
+	
+	z-index: 10 ;
+}
+
+/*Header*/
+.peptoBismol_header
+{
+	position: absolute ;
+	
+	top: 0px ;
+	left: 0px ;
+	
+	z-index: 5 ;
+}
+
+/*Notes*/
+.peptoBismol_notes
+{
+	position: absolute ;
+	
+	font-family: FuturaBook ;
+	font-size: 1em ;
+	
+	color: #00529F ;
+}
+
+/***********
+Brochure
+***********/
+
+/******************Slide 001******************/
+
+/*Es probable text*/
+.peptoBismol_esProbable_txt
+{
+	position: absolute ;
+	
+	top: 200px ;
+	margin-left: 100px ;
+}
+
+/*Bullets*/
+.peptoBismol_bullets
+{
+	position: absolute ;
+	
+	width: 350px ;
+	
+	font-family: FuturaBold ;
+	font-size: 2em ;
+	
+	color: #00529F ;
+}
+
+	/*li*/
+.peptoBismol_bullets li
+{
+	position: absolute ;
+	
+	font-family: FuturaBold ;
+	font-size: 1.5em ;
+	
+	color: #00529F ;
+	
+	list-style-image: url(../img/img_bullet_tick.png) ;
+}
+
+		/*01*/
+#peptoBismol_bullets_s1_01
+{
+	top: 375px ;
+	left: 150px ;
+}
+
+		/*02*/
+#peptoBismol_bullets_s1_02
+{
+	top: 450px ;
+	left: 150px ;
+}
+
+		/*03*/
+#peptoBismol_bullets_s1_03
+{
+	top: 525px ;
+	left: 150px ;
+}
+
+		/*04*/
+#peptoBismol_bullets_s1_04
+{
+	top: 375px ;
+	left: 550px ;
+}
+
+
+		/*05*/
+#peptoBismol_bullets_s1_05
+{
+	top: 450px ;
+	left: 550px ;
+}
+
+/*Pregunta 01*/
+.peptoBismol_pregunta_txt
+{
+	position: absolute ;
+	
+	top: 700px ;
+	margin-left: 200px ;
+}
+
+/*Bottle 01*/
+.peptoBismol_bottleBack
+{
+	position: absolute ;
+	
+	top: 200px ;
+	margin-left: 750px ;
+}
+
+/******************Slide 002******************/
+/*Doble Poder*/
+.peptoBismol_doblePoder_txt
+{
+	position: absolute ;
+	
+	top: 200px ;
+	margin-left: 100px ;
+	
+	width: 1080px ;
+	
+	font-family: HelveticaRounded ;
+	font-size: 2.5em ;
+	text-align: center ;
+	
+	color: #00529F ;
+}
+
+/*Beneficios text*/
+.peptoBismol_cualesBeneficios_txt
+{
+	position: absolute ;
+	
+	top: 325px ;
+	margin-left: 100px ;
+	
+	width: 1080px ;
+	
+	font-family: HelveticaRounded ;
+	font-size: 1.5em ;
+	text-align: center ;
+	
+	color: #00529F ;
+}
+
+/*Alivio Eficaz text*/
+.peptoBismol_alivioEficaz_txt
+{
+	position: absolute ;
+	
+	top: 400px ;
+	left: 150px ;
+	
+	width: 500px ;
+	
+	font-family: HelveticaRounded ;
+	font-size: 1.5em ;
+	text-align: left ;
+	
+	color: #00529F ;
+}
+
+/*Malestares txt*/
+.peptoBismol_malestares
+{
+	position: absolute ;
+	
+	top: 550px ;
+	margin-left: 125px ;
+}
+
+/*Bullets*/
+	/*01*/
+#peptoBismol_bullets_s2_01
+{
+	width: 475px ;
+	font-family: HelveticaRounded ;
+	font-size: 1.25em ;
+	
+	top: 400px ;
+	left: 700px ;
+}
+
+		/*li*/
+#peptoBismol_bullets_s2_01 li
+{
+	font-family: HelveticaRounded ;
+}
+
+	/*02*/
+#peptoBismol_bullets_s2_02
+{
+	width: 475px ;
+	font-family: HelveticaRounded ;
+	font-size: 1.25em ;
+	
+	top: 500px ;
+	left: 700px ;
+}
+
+		/*li*/
+#peptoBismol_bullets_s2_02 li
+{
+	font-family: HelveticaRounded ;
+}
+
+	/*03*/
+#peptoBismol_bullets_s2_03
+{
+	width: 475px ;
+	font-family: HelveticaRounded ;
+	font-size: 1.25em ;
+	
+	top: 650px ;
+	left: 700px ;
+}
+
+		/*li*/
+#peptoBismol_bullets_s2_03 li
+{
+	font-family: HelveticaRounded ;
+}
+
+/*Note*/
+#peptoBismol_notes_s1_01
+{
+	position: absolute ;
+	
+	top: 850px ;
+	left: 100px ;
+}
+
+/******************Slide 003******************/
+/*Sistema Digestivo*/
+.peptoBismol_sistemaDigestivo
+{
+	position: absolute ;
+	
+	top: 25px ;
+	margin-left: 25px ;
+}
+
+/*Sistema Digestivo | Estomago*/
+.peptoBismol_estomago
+{
+	position: absolute ;
+	
+	top: 50px ;
+	margin-left: 115px ;
+}
+
+/*Descubre como Actua text*/
+.peptoBismol_descubreActua_txt
+{
+	position: absolute ;
+	
+	top: 200px ;
+	margin-left: 625px ;
+	
+	font-family: HelveticaRounded ;
+	font-size: 2.15em ;
+	text-align: center ;
+	
+	color: #00529F ;
+}
+
+/*Sistema digestivo txt*/
+.peptoBismol_sistemaDigestivo_txt
+{
+	position: absolute ;
+	
+	top: 250px ;
+	margin-left: 675px ;
+	
+	font-family: HelveticaRounded ;
+	font-size: 1.25em ;
+	text-align: center ;
+	
+	color: #00529F ;
+}
+
+/*Subsalicilato*/
+.peptoBismol_subsalicilato
+{
+	position: absolute ;
+	
+	top: 200px ;
+	margin-left: 100px ;
+}
+
+/*Est+omago Sólamente*/
+.peptoBismol_estomagoSolamente
+{
+	position: absolute ;
+	
+	top: 175px ;
+	margin-left: 220px ;
+}
+
+/*Intestino Delgado*/
+.peptoBismol_intestinoDelgado
+{
+	position: absolute ;
+	
+	top: 600px ;
+	margin-left: 320px ;
+}
+
+/*Colon*/
+.peptoBismol_colon
+{
+	position: absolute ;
+	
+	top: 775px ;
+	margin-left: 200px ;
+}
+
+/*Stop*/
+.peptoBismol_stop
+{
+	position: absolute ;
+	
+	top: 515px ;
+	margin-left: 200px ;
+}
+
+/*Bullets*/
+	/*Title*/
+.peptoBismol_bullets_s3_title
+{
+	position: absolute ;
+	
+	
+	font-family: HelveticaRounded ;
+	font-size: 1.5em ;
+	text-align: center ;
+	
+	color: #BC1E54 ;
+}
+	
+		/*01*/
+#peptoBismol_bullets_s3_title_01
+{
+	top: 325px ;
+	left: 525px ;
+}
+
+		/*02*/
+#peptoBismol_bullets_s3_title_02
+{
+	top: 550px ;
+	left: 525px ;
+}
+
+		/*03*/
+#peptoBismol_bullets_s3_title_03
+{
+	top: 695px ;
+	left: 525px ;
+}
+
+	/*Text*/
+.peptoBismol_bullets_s3_txt
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.25em ;
+	text-align: left ;
+	
+	color: #374379 ;
+}
+
+		/*01*/
+#peptoBismol_bullets_s3_txt_01
+{
+	top: 375px ;
+	left: 525px ;
+}
+
+		/*02*/
+#peptoBismol_bullets_s3_txt_02
+{
+	top: 600px ;
+	left: 525px ;
+}
+
+		/*03*/
+#peptoBismol_bullets_s3_txt_03
+{
+	top: 745px ;
+	left: 525px ;
+}
+
+/*Bottle Front*/
+.peptoBismol_bottle_front
+{
+	position: absolute ;
+	
+	top: 350px ;
+	margin-left: 875px ;
+}
+
+/******************Slide 004******************/
+/*Top blue box*/
+.peptoBismol_blue_box
+{
+	position: absolute ;
+	
+	padding: 10px ;
+	
+	top: 175px ;
+	margin-left: 100px ;
+	
+	background: rgba(0,85,160,1) ;
+	
+	border: dotted #FFFF00 5px ;
+	
+	width: 1080px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.25em ;
+	text-align: left ;
+	
+	color: #FFF ;
+}
+
+	/*Strong*/
+.peptoBismol_blue_box strong
+{
+	font-family: HelveticaRounded ;
+	
+	color: #FBED23 ;
+}
+
+/*Indicaciones*/
+.peptoBismol_indicaciones_txt
+{
+	position: absolute ;
+	
+	top: 400px ;
+	left: 100px ;
+	
+	width: 200px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.15em ;
+	text-align: right ;
+	
+	color: #00529F ;
+}
+
+	/*Strong*/
+.peptoBismol_indicaciones_txt strong
+{
+	font-family: HelveticaRounded ;
+}
+
+	/*Indicaciones Tabla*/
+.peptoBismol_indicaciones_table
+{
+	position: absolute ;
+	
+	top: 380px ;
+	left: 450px ;
+}
+
+/*Note*/
+#peptoBismol_notes_s4_01
+{
+	position: absolute ;
+	
+	top: 835px ;
+	left: 75px ;
+}
+
+/**********************************************
+Vicks
+***********************************************/
+/*Logo*/
+.vicks_logoVicks
+{
+	position: absolute ;
+	
+	top: 10px ;
+	left: 20px ;
+	
+	z-index: 10px ;
+}
+
+/*Notes*/
+.vicks_notes
+{
+	position: absolute ;
+	
+	font-family: FuturaBook ;
+	font-size: .85em ;
+}
+
+/***********
+Brochure
+***********/
+/*Bottle*/
+.vicks_bottle
+{
+	position: absolute ;
+	
+	top: 75px ;
+	left: 450px ;
+	
+	z-index: 2 ;
+}
+
+/******************Slide 001******************/
+
+/*Bottle Shadow*/
+.vicks_bottle_shadow
+{
+	position: absolute ;
+	
+	top: 800px ;
+	left: 310px ;
+	
+	z-index: 2 ;
+}
+
+/*Logo bottle*/
+.vicks_logoBottle
+{
+	position: absolute ;
+	
+	top: 300px ;
+	left: 575px ;
+	
+	z-index: 3 ;
+}
+
+/*VapoRub Text*/
+.vicks_VapoRub_txt
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 540px ;
+	
+	width: 200px ;
+	
+	font-family: FuturaBold ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Pregunta Text*/
+.vicks_s1_pregunta
+{
+	position: absolute ;
+	
+	top: 525px ;
+	left: 470px ;
+	
+	width: 340px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Pregunta Text Brasil*/
+.vicks_s1_pregunta_bra
+{
+	position: absolute ;
+	
+	top: 495px ;
+	left: 470px ;
+	
+	width: 340px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.25em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Product 01*/
+.vicks_s1_product_01
+{
+	position: absolute ;
+	
+	top: 650px ;
+	left: 470px ;
+	
+	width: 340px ;
+	
+	z-index: 3 ;
+}
+
+/*Product 01 Brasil*/
+.vicks_s1_product_01_bra
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 470px ;
+	
+	width: 340px ;
+	
+	z-index: 3 ;
+}
+
+/*Note 01*/
+#vicks_s1_notes_01
+{
+	position: absolute ;
+	
+	top: 840px ;
+	left: 470px ;
+	
+	width: 340px ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Note 01 Brasil*/
+#vicks_s1_notes_01_bra
+{
+	position: absolute ;
+	
+	top: 815px ;
+	left: 470px ;
+	
+	width: 340px ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+
+
+/******************Slide 002******************/
+/*Bottle seccond slide*/
+#vicks_bottle_s2
+{
+	position: absolute ;
+	
+	top: 75px ;
+	left: 750px ;
+	
+	z-index: 2 ;
+}
+
+/*Bottle Shadow second slide*/
+#vicks_bottle_shadow_s2
+{
+	position: absolute ;
+	
+	top: 800px ;
+	left: 600px ;
+	
+	z-index: 1 ;
+}
+
+/*Recomienda text*/
+.vicks_recomienda_txt
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 775px ;
+	
+	width: 325px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Products 02*/
+.vicks_products_02
+{
+	position: absolute ;
+	
+	top: 350px ;
+	left: 200px ;
+	
+	width: 340px ;
+	
+	text-align: center ;
+	
+	z-index: 3 ;
+}
+
+/*Esquema de Ventas text*/
+.vicks_esquemaVentas_txt
+{
+	position: absolute ;
+	
+	top: 200px ;
+	left: 100px ;
+	
+	width: 600px ;
+	
+	font-family: FuturaBook ;
+	font-size: 2em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Esquema de Ventas table*/
+.vicks_esquemaVentas_table
+{
+	position: absolute ;
+	
+	top: 550px ;
+	left: 150px ;
+	
+	width: 340px ;
+	
+	z-index: 3 ;
+}
+
+/*Note 02*/
+#vicks_s2_notes_01
+{
+	position: absolute ;
+	
+	top: 785px ;
+	left: 770px ;
+	
+	width: 340px ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/******************Slide 003******************/
+/*Bottle top girl*/
+#img_bottle_topGirl
+{
+	position: absolute ;
+	
+	top: 75px ;
+	left: 450px ;
+	
+	z-index: 3 ;
+}
+
+/*VapoRub text*/
+.vicks_s3_vapoRub_txt
+{
+	position: absolute ;
+	
+	top: 375px ;
+	left: 510px ;
+	
+	width: 260px ;
+	
+	font-family: FuturaBold ;
+	font-size: 2.5em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Alivia text*/
+.vicks_s3_alivia_txt
+{
+	position: absolute ;
+	
+	top: 415px ;
+	left: 510px ;
+	
+	width: 260px ;
+	
+	font-family: FuturaBold ;
+	font-size: 1.75em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*3 text*/
+.vicks_s3_3_txt
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 510px ;
+	
+	width: 260px ;
+	
+	font-family: FuturaBold ;
+	font-size: 8em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Síntomas text*/
+.vicks_s3_sintomas_txt
+{
+	position: absolute ;
+	
+	top: 575px ;
+	left: 510px ;
+	
+	width: 260px ;
+	
+	font-family: FuturaBold ;
+	font-size: 1.75em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Alivia text*/
+.vicks_s3_bullets
+{
+	position: absolute ;
+	
+	padding-left: 75px ;
+	
+	left: 425px ;
+	
+	width: 360px ;
+	
+	font-family: FuturaBold ;
+	font-size: 1.75em ;
+	
+	text-align: left ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+	/*li*/
+.vicks_s3_bullets li
+{
+	font-family: FuturaBold ;
+	
+	text-align: left ;
+	
+	color: #FFF ;
+	
+	list-style-image: url(../img/img_bullet_green.png) ;
+}
+
+		/*01*/
+#vicks_s3_bullets_01
+{
+	position: absolute ;
+	top: 625px ;
+}
+
+		/*02*/
+#vicks_s3_bullets_02
+{
+	position: absolute ;
+	top: 665px ;
+}
+
+		/*03*/
+#vicks_s3_bullets_03
+{
+	position: absolute ;
+	top: 705px ;
+}
+
+/*Para una buena noche text*/
+.vicks_s3_buenaNoche
+{
+	position: absolute ;
+	
+	top: 750px ;
+	left: 460px ;
+	
+	width: 360px ;
+	
+	font-family: FuturaBold ;
+	font-size: 1.85em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Note 01*/
+#vicks_s3_notes_01
+{
+	position: absolute ;
+	
+	top: 840px ;
+	left: 470px ;
+	
+	width: 340px ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Ungüento image*/
+#vicks_s3_unguento
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 700px ;
+	
+	z-index: 3 ;
+}
+
+/******************Slide 004******************/
+
+/*Bottle fourth slide*/
+#vicks_bottle_s4
+{
+	position: absolute ;
+	
+	top: 75px ;
+	left: 150px ;
+	
+	z-index: 2 ;
+}
+
+/*Bottle shadow fourth slide*/
+#vicks_bottle_shadow_s4
+{
+	position: absolute ;
+	
+	top: 800px ;
+	left: 10px ;
+	
+	z-index: 1 ;
+}
+
+/*La ciencia text*/
+.vicks_s4_ciencia_txt
+{
+	position: absolute ;
+	
+	top: 300px ;
+	left: 210px ;
+	
+	width: 260px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.75em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Cuando se frota text*/
+.vicks_s4_cuandoFrota_txt
+{
+	position: absolute ;
+	
+	top: 400px ;
+	left: 185px ;
+	
+	width: 315px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.25em ;
+	
+	text-align: justify ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Respiración libre text*/
+.vicks_s4_respiracionLibre
+{
+	position: absolute ;
+	
+	top: 150px ;
+	left: 575px ;
+	
+	width: 650px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.25em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Calma la tos text*/
+.vicks_s4_calmaTos
+{
+	position: absolute ;
+	
+	top: 525px ;
+	left: 650px ;
+	
+	width: 250px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.25em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Calma Musculos text*/
+.vicks_s4_calmaMusculo
+{
+	position: absolute ;
+	
+	top: 525px ;
+	left: 915px ;
+	
+	width: 250px ;
+	
+	font-family: FuturaBook ;
+	font-size: 1.25em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Plantas image*/
+.vicks_s4_plantas
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 700px ;
+	
+	z-index: 3 ;
+}
+
+/*Plantas image bra*/
+.vicks_s4_plantas_bra
+{
+	position: absolute ;
+	
+	top: 265px ;
+	left: 700px ;
+	
+	z-index: 3 ;
+}
+
+/*Ungüento image*/
+.vicks_s4_unguento
+{
+	position: absolute ;
+	
+	top: 590px ;
+	left: 350px ;
+	
+	z-index: 3 ;
+}
+
+/*Note 01 | Logo P&G*/
+#vicks_s4_notes_01
+{
+	position: absolute ;
+	
+	top: 840px ;
+	left: 175px ;
+	
+	width: 340px ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 3 ;
+}
+
+/*Como Educar Al */
+.topImageContainer_educarFarma
+{
+	position: absolute ;
+	top: 250px ;
+	left: 150px ;
+}
+
+
+/**********************************************
+CLEARBLUE Informacion de la Marca
+***********************************************/
+/************Slide 01**************/
+
+/*Grafico*/
+#img01_sld_01_inf_Mrc_C
+{
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 495px;
+	height: 960px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Head Text*/
+#txt01_sld_01_inf_Mrc_C
+{
+	position:absolute;
+	top: 390px ;
+	left: 125px ;
+	width: 641.5px;
+	height: 221px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #006699;
+	z-index: 1;
+}
+
+/************Slide 02**************/
+#img01_sld_02_inf_Mrc_C
+{
+	position:absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 637px;
+	height: 465px;
+	z-index: -1;
+}
+
+/************Slide 03**************/
+
+/*BaseGray*/
+#img01_sld_03_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Header*/
+#img02_sld_03_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	right: 109px;
+	width: 513px;
+	height: 202px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_03_inf_Mrc_C
+{
+	position:absolute;
+	top: 268px;
+	left: 133px;
+	width: 475px;
+	height: 573px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img04_sld_03_inf_Mrc_C
+{
+	position:absolute;
+	top: 187px;
+	left: 702px;
+	width: 246px;
+	height: 242px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico3*/
+#img05_sld_03_inf_Mrc_C
+{
+	position:absolute;
+	top: 530px;
+	left: 668px;
+	width: 60px;
+	height: 208px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Head Text*/
+#txt01_sld_03_inf_Mrc_C
+{
+	position:absolute;
+	top: 260px ;
+	left: 177px ;
+	width: 465px;
+	height: 80px;
+	
+	font-size: 1.15em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text*/
+#txt02_sld_03_inf_Mrc_C
+{
+	position:absolute;
+	top: 436px ;
+	left: 737px ;
+	width: 400px;
+	height: 380px;
+	
+	font-size: 1.1em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 06**************/
+/*BaseGray*/
+#img01_sld_06_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Header*/
+#img02_sld_06_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	right: 109px;
+	width: 513px;
+	height: 202px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_06_inf_Mrc_C
+{
+	position:absolute;
+	top: 505px;
+	left: 155px;
+	width: 832px;
+	height: 339px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img04_sld_06_inf_Mrc_C
+{
+	position:absolute;
+	top: 330px;
+	left: 820px;
+	width: 280px;
+	height: 280px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Head Text*/
+#txt01_sld_06_inf_Mrc_C
+{
+	position:absolute;
+	top: 310px ;
+	left: 205px ;
+	width: 325px;
+	height: 135px;
+	
+	font-size: 2em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text*/
+#txt02_sld_06_inf_Mrc_C
+{
+	position:absolute;
+	top: 435px ;
+	left: 205px ;
+	width: 400px;
+	height: 25px;
+	
+	font-size: 1.1em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 07**************/
+/*BaseGray*/
+#img01_sld_07_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Header*/
+#img02_sld_07_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	right: 109px;
+	width: 513px;
+	height: 202px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_07_inf_Mrc_C
+{
+	position:absolute;
+	top: 298px;
+	left: 115px;
+	width: 873px;
+	height: 486px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img04_sld_07_inf_Mrc_C
+{
+	position:absolute;
+	top: 641px;
+	left: 820px;
+	width: 266px;
+	height: 157px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Box Text*/
+#txt02_sld_07_inf_Mrc_C
+{
+	position:absolute;
+	top: 292px ;
+	left: 205px ;
+	width: 325px;
+	height: 135px;
+	
+	font-size: 2em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 08**************/
+/*BaseGray*/
+#img01_sld_08_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_08_inf_Mrc_C
+{
+	position:absolute;
+	top: 285px;
+	left: 205px;
+	width: 219px;
+	height: 62px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img04_sld_08_inf_Mrc_C
+{
+	position:absolute;
+	top: 382px;
+	left: 115.5px;
+	width: 712px;
+	height: 78px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico3*/
+#img05_sld_08_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px;
+	left: 696px;
+	width: 474px;
+	height: 606px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Box Text*/
+#txt02_sld_08_inf_Mrc_C
+{
+	position:absolute;
+	top: 435px ;
+	left: 205px ;
+	width: 500px;
+	height: 25px;
+	
+	font-size: 1.5em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 09**************/
+/*BaseGray*/
+#img01_sld_09_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Header*/
+#img02_sld_09_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	right: 109px;
+	width: 513px;
+	height: 202px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_09_inf_Mrc_C
+{
+	position:absolute;
+	top: 442px;
+	left: 490px;
+	width: 708px;
+	height: 375px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Box Text*/
+#txt02_sld_09_inf_Mrc_C
+{
+	position:absolute;
+	top: 292px ;
+	left: 205px ;
+	width: 500px;
+	height: 25px;
+	
+	font-size: 1.5em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+
+/************Slide 10**************/
+/*BaseGray*/
+#img01_sld_10_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Header*/
+#img02_sld_10_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	right: 109px;
+	width: 513px;
+	height: 202px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_10_inf_Mrc_C
+{
+	position:absolute;
+	top: 268px;
+	left: 133px;
+	width: 475px;
+	height: 573px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img04_sld_10_inf_Mrc_C
+{
+	position:absolute;
+	top: 250px;
+	left: 466px;
+	width: 292px;
+	height: 332px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico3*/
+#img05_sld_10_inf_Mrc_C
+{
+	position:absolute;
+	top: 494px;
+	left: 671px;
+	width: 344px;
+	height: 295px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico4*/
+#img06_sld_10_inf_Mrc_C
+{
+	position:absolute;
+	top: 256px;
+	left: 932px;
+	width: 158px;
+	height: 585px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/************Slide 11**************/
+/*Grafico*/
+#img03_sld_11_inf_Mrc_C
+{
+	position:absolute;
+	top: 255px;
+	left: 197px;
+	width: 918px;
+	height: 554px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/************Slide 12**************/
+/*BaseGray*/
+#img01_sld_12_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Header*/
+#img02_sld_12_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	right: 109px;
+	width: 513px;
+	height: 202px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_12_inf_Mrc_C
+{
+	position:absolute;
+	top: 356px;
+	left: 115px;
+	width: 1054px;
+	height: 398px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico2*/
+#img04_sld_12_inf_Mrc_C
+{
+	position:absolute;
+	top: 369px;
+	left: 650px;
+	width: 116px;
+	height: 385px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Grafico3*/
+#img05_sld_12_inf_Mrc_C
+{
+	position:absolute;
+	top: 480px;
+	left: 788px;
+	width: 351px;
+	height: 45px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Head Text*/
+#txt01_sld_12_inf_Mrc_C
+{
+	position:absolute;
+	top: 425px ;
+	left: 140px ;
+	width: 500px;
+	height: 200px;
+	
+	font-size: 1.1em ;
+	text-align: right;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/*Box Text*/
+#txt02_sld_12_inf_Mrc_C
+{
+	position:absolute;
+	top: 425px ;
+	left: 787px ;
+	width: 350px;
+	height: 260px;
+	
+	font-size: 1.1em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 13**************/
+/*Grafico*/
+#img03_sld_13_inf_Mrc_C
+{
+	position:absolute;
+	top: 261px;
+	left: 209px;
+	width: 862px;
+	height: 550px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+
+/************Slide 14**************/
+/*BaseGray*/
+#img01_sld_14_inf_Mrc_C
+{
+	position:absolute;
+	top: 233.7px;
+	left: 57px;
+	width: 1168px;
+	height: 688px;
+	z-index: -3;
+	overflow: hidden ;
+}
+
+/*Header*/
+#img02_sld_14_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	right: 109px;
+	width: 513px;
+	height: 202px;
+	z-index: -2;
+	overflow: hidden ;
+}
+
+/*Grafico*/
+#img03_sld_14_inf_Mrc_C
+{
+	position:absolute;
+	top: 234px ;
+	left: 695px ;
+	width: 474px;
+	height: 606px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+/*Box Text*/
+#txt02_sld_14_inf_Mrc_C
+{
+	position:absolute;
+	top: 292px ;
+	left: 205px ;
+	width: 500px;
+	height: 25px;
+	
+	font-size: 1.5em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 15**************/
+/*Box Text*/
+#txt02_sld_15_inf_Mrc_C
+{
+	position:absolute;
+	top: 292px ;
+	left: 205px ;
+	width: 450px;
+	height: 25px;
+	
+	font-size: 1.25em ;
+	text-align: left;
+	line-height:1.25em;
+	color: #FFF ;
+	z-index: 1;
+}
+
+/************Slide 21**************/
+/*Grafico*/
+#img03_sld_21_inf_Mrc_C
+{
+	position:absolute;
+	top: 460px ;
+	left: 114.3px ;
+	width: 1055px;
+	height: 380px;
+	z-index: -1;
+	overflow: hidden ;
+}
+
+
+
+/**********************************************
+Hipoglos
+***********************************************/
+/*Logo*/
+.hipoglos_logoHipoglos
+{
+	position: absolute ;
+	
+	top: 25px ;
+	left: 25px ;
+	
+	z-index: 10 ;
+}
+
+/***********
+Brochure
+***********/
+/************Slide 01**************/
+/*Heart*/
+.hipoglos_heart
+{
+	position: absolute ;
+	
+	top: 125px ;
+	
+	z-index: 1 ;
+}
+
+	/*01*/
+#hipoglos_heart_01
+{
+	left: -490px ;
+}
+
+	/*02*/
+#hipoglos_heart_02
+{
+	left: 150px ;
+}
+
+	/*03*/
+#hipoglos_heart_03
+{
+	left: 790px ;
+}
+
+
+/*Main Text*/
+.hipoglos_MainText
+{
+	position: absolute ;
+	
+	width: 350px ;
+	
+	left: 650px ;
+	top: 300px ;
+	
+	font-family: VAGRoundedBold ;
+	font-size: 2.5em ;
+	text-align: center ;
+	
+	color: #FFF ;
+	z-index: 2 ;
+	/*color: #B72127 ;*/
+}
+
+/*Notes*/
+.hipoglos_notes
+{
+	position: absolute ;
+		
+	left: 150px ;
+	top: 800px ;
+	
+	font-family: VAGRoundedLight ;
+	font-size: 1em ;
+	text-align: center ;
+	
+	color: #B72127 ;
+}
+
+/************Slide 02**************/
+/*Bebe*/
+.hipoglos_imgBebe
+{
+	position: absolute ;
+	
+	bottom: 75px ;
+	right: 150px ;
+	
+	z-index: 2 ;
+}
+
+/*Pompis*/
+.hipoglos_pompis
+{
+	position: absolute ;
+	
+	z-index: 2 ;	
+}
+
+	/*01*/
+#hipoglos_pompis_01
+{
+	top: 315px ;
+	left: 800px ;
+}
+
+	/*02*/
+#hipoglos_pompis_02
+{
+	top: 525px ;
+	left: 700px ;
+}
+
+/*Little heart text*/
+.hipoglos_heartText
+{
+	position: absolute ;
+	
+	top: 675px ;
+	left: 150px ;
+	
+	z-index: 2 ;
+}
+
+/*Texts*/
+	/*01*/
+.hipoglos_text_s2
+{
+	position: absolute ;
+	
+	
+	top: 175px ;
+	left: 250px ;
+	
+	width: 300px ;
+	
+	font-family: VAGRoundedBold ;
+	font-size: 1.5em ;
+	
+	text-align: center ;
+	
+	color: #FFF ;
+	
+	z-index: 2 ;
+}
+
+/*Ribbons*/
+.hipoglos_ribbon
+{
+	position: absolute ;	
+	z-index: 2 ;
+}
+
+	/*01*/
+#hipoglos_ribbon_01
+{
+	top: 230px ;
+	left: 250px ;
+}
+
+	/*02*/
+#hipoglos_ribbon_02
+{
+	top: 440px ;
+	left: 250px ;
+}
+
+	/*03*/
+#hipoglos_ribbon_03
+{
+	top: 175px ;
+	left: 725px ;
+}
+
+/*Text Content*/
+.hipoglos_text_s2_cont
+{
+	position: absolute ;
+	
+	width: 300px ;
+	
+	font-family: VAGRoundedLight ;
+	font-size: .85em ;
+	
+	text-align: left ;
+	
+	color: #FFF ;
+	
+	z-index: 2 ;
+}
+
+/*Text Content*/
+	/*01*/
+#hipoglos_text_s2_cont_01
+{
+	width: 400px ;
+	
+	top: 350px ;
+	left: 200px ;
+}
+
+	/*02*/
+#hipoglos_text_s2_cont_02
+{
+	width: 240px ;
+	
+	top: 550px ;
+	left: 350px ;
+}
+
+	/*03*/
+#hipoglos_text_s2_cont_03
+{
+	width: 400px ;
+	
+	top: 275px ;
+	left: 675px ;
+}
+
+	/*04*/
+#hipoglos_text_s2_cont_04
+{
+	width: 400px ;
+	
+	top: 450px ;
+	left: 675px ;
+}
+
+/************Slide 03**************/
+/*Red text*/
+.hipoglos_text_s3_red
+{
+	position: absolute ;
+	
+	font-family: VAGRoundedLight ;
+	
+	color: #9C252A ;
+}
+
+	/*01*/
+#hipoglos_text_s3_red_01
+{
+	top: 150px ;
+	left: 150px ;
+	
+	font-family: VAGRoundedBold ;
+	font-size: 2em ;
+}
+
+	/*02*/
+#hipoglos_text_s3_red_02
+{
+	top: 225px ;
+	left: 150px ;
+	
+	font-family: VAGRoundedBold ;
+	font-size: .8em ;
+}
+
+	/*03*/
+#hipoglos_text_s3_red_03
+{
+	top: 575px ;
+	left: 150px ;
+	
+	width: 275px ;
+	
+	font-family: VAGRoundedBold ;
+	font-size: .8em ;
+}
+
+	/*04*/
+#hipoglos_text_s3_red_04
+{
+	top: 575px ;
+	left: 475px ;
+	
+	width: 275px ;
+	
+	font-family: VAGRoundedBold ;
+	font-size: .8em ;
+}
+
+/*Images*/
+.hipoglos_tables_s3
+{
+	position: absolute ;
+}
+
+	/*01*/
+#hipoglos_tables_s3_01
+{
+	top: 275px ;
+	left: 150px ;
+}
+
+	/*02*/
+#hipoglos_tables_s3_02
+{
+	top: 275px ;
+	left: 450px ;
+}
+
+	/*03*/
+#hipoglos_tables_s3_03
+{
+	top: 650px ;
+	left: 125px ;
+}
+
+
+/**********************************************
+Fundamentales de ventas
+***********************************************/
+/*Button Material de Visibilidad*/
+#btn_MaterialVisibilidad_fun
+{
+	position: absolute ;
+	
+	top: 825px ;
+	left: 570px ;
+	
+	width: 135px ;
+	
+	display: none ;
+}
+
+/***********
+Distribución
+***********/
+/*Images*/
+.img_fundamentales
+{
+	position: absolute ;
+	
+	z-index: 2 ;
+}
+
+/*Competencia*/
+	/*Vick*/
+.competencia_vick_01
+{
+	position: absolute ;
+	
+	top: 382px ;
+	left: 550px ;
+	
+	z-index: 3 ;
+}
+
+	/*Metamucil*/
+.competencia_metamucil_01
+{
+	position: absolute ;
+	
+	top: 367px ;
+	left: 537px ;
+	
+	z-index: 3 ;
+}
+
+	/*Pepto-Bismol*/
+.competencia_peptoBismol_01
+{
+	position: absolute ;
+	
+	top: 395px ;
+	left: 560px ;
+	
+	z-index: 3 ;
+}
+
+	/*Clearblue*/
+.competencia_clearblue_01
+{
+	position: absolute ;
+	
+	top: 390px ;
+	left: 565px ;
+	
+	z-index: 3 ;
+}
+
+
+/*Productos*/
+	/*Vick*/
+		/*01*/
+#productoVick_01
+{
+	top: 382px ;
+	left: 540px ;
+}
+
+		/*02*/
+#productoVick_02
+{
+	top: 390px ;
+	left: 575px ;
+}
+
+		/*03*/
+#productoVick_03
+{
+	top: 390px ;
+	left: 600px ;
+}
+
+		/*04*/
+#productoVick_04
+{
+	top: 400px ;
+	left: 622px ;
+}
+
+		/*05*/
+#productoVick_05
+{
+	top: 400px ;
+	left: 675px ;
+}
+
+	/*Metamucil*/
+		/*01*/
+#productoMetamucil_01
+{
+	top: 370px ;
+	left: 540px ;
+}
+
+		/*02*/
+#productoMetamucil_02
+{
+	top: 370px ;
+	left: 570px ;
+}
+
+		/*03*/
+#productoMetamucil_03
+{
+	top: 370px ;
+	left: 600px ;
+}
+
+		/*04*/
+#productoMetamucil_04
+{
+	top: 375px ;
+	left: 630px ;
+}
+
+		/*05*/
+#productoMetamucil_05
+{
+	top: 375px ;
+	left: 660px ;
+}
+
+
+	/*Pepto-Bismol*/
+		/*01*/
+#productoPeptoBismol_01
+{
+	top: 390px ;
+	left: 560px ;
+}
+
+		/*02*/
+#productoPeptoBismol_02
+{
+	top: 392px ;
+	left: 595px ;
+}
+
+		/*03*/
+#productoPeptoBismol_03
+{
+	top: 387px ;
+	left: 630px ;
+}
+
+		/*04*/
+#productoPeptoBismol_04
+{
+	top: 392px ;
+	left: 665px ;
+}
+
+		/*05*/
+#productoPeptoBismol_05
+{
+	top: 390px ;
+	left: 695px ;
+}
+
+
+	/*Clearblue*/
+		/*01*/
+#productoClearblue_01
+{
+	top: 390px ;
+	left: 560px ;
+}
+
+		/*02*/
+#productoClearblue_02
+{
+	top: 390px ;
+	left: 595px ;
+}
+
+		/*03*/
+#productoClearblue_03
+{
+	top: 390px ;
+	left: 630px ;
+}
+
+		/*04*/
+#productoClearblue_04
+{
+	top: 390px ;
+	left: 665px ;
+}
+
+
+
+
+
+
+
+/*Buttons*/
+	/*01*/
+#rectangle_fundamentales_btn_01
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	padding-top: 10px ;
+	
+	top: 750px ;
+	left: 475px ;
+	
+	font-size: 1.1em ;
+	
+	text-align: center ;
+}
+
+	/*02*/
+#rectangle_fundamentales_btn_02
+{
+	position: absolute ;
+	
+	padding: 5px ;
+	padding-top: 10px ;
+	
+	top: 750px ;
+	left: 650px ;
+	
+	font-size: 1.1em ;
+	
+	text-align: center ;
+}
+
+
+/************Slide 01**************/
+	/*01*/
+#img_fundamentales_s1_prod_01
+{
+	top: 375px ;
+	left: 390px ;
+}
+
+	/*02*/
+#img_fundamentales_s1_prod_02
+{
+	top: 375px ;
+	left: 500px ;
+}
+
+	/*03*/
+#img_fundamentales_s1_prod_03
+{
+	top: 360px ;
+	left: 790px ;
+}
+
+	/*04*/
+#img_fundamentales_s1_prod_04
+{
+	top: 435px ;
+	left: 390px ;
+}
+
+	/*05*/
+#img_fundamentales_s1_prod_05
+{
+	top: 435px ;
+	left: 500px ;
+}
+
+/*Mas Productos*/
+.txt_MasProductos
+{
+	position: absolute ;
+	
+	padding: 10px ;
+	
+	width: 200px ;
+	height: 100px ;
+	
+	top: 375px ;
+	left: 550px ;
+	
+	font-size: 1.5em ;
+		
+	z-index: 3 ;
+}
+
+/************Slide 02**************/
+	/*01*/
+#img_fundamentales_s2_prod_01
+{
+	top: 315px ;
+	left: 825px ;
+}
+
+	/*02*/
+#img_fundamentales_s2_prod_02
+{
+	top: 365px ;
+	left: 745px ;
+}
+
+	/*03*/
+#img_fundamentales_s2_prod_03
+{
+	top: 425px ;
+	left: 735px ;
+}
+
+	/*04*/
+#img_fundamentales_s2_prod_04
+{
+	top: 440px ;
+	left: 840px ;
+}
+
+	/*05*/
+#img_fundamentales_s2_prod_05
+{
+	top: 585px ;
+	left: 675px ;
+}
+
+	/*05 mex*/
+#img_fundamentales_s2_prod_05_mex
+{
+	top: 525px ;
+	left: 675px ;
+}
+
+	/*06*/
+#img_fundamentales_s2_prod_06
+{
+	top: 585px ;
+	left: 775px ;
+}
+
+
+
+/************Distribución Numérica**************/
+/*Mapa*/
+.mapaCountry
+{
+	position: absolute ;
+	top: 250px ;
+	
+	z-index: 1 ;	
+}
+
+	/*Brasil*/
+#mapaCountry_brasil
+{
+	left: 325px ;
+}
+
+/*Store image*/
+.imgStore_map
+{
+	position: absolute ;	
+	z-index: 2 ;
+}
+
+	/*Brasil*/
+		/*01*/
+#imgStore_map_bra_01
+{
+	top: 275px ;
+	left: 350px ;
+}
+
+		/*02*/
+#imgStore_map_bra_02
+{
+	top: 300px ;
+	left: 650px ;
+}
+
+		/*03*/
+#imgStore_map_bra_03
+{
+	top: 450px ;
+	left: 450px ;
+}
+
+		/*04*/
+#imgStore_map_bra_04
+{
+	top: 460px ;
+	left: 800px ;
+}
+
+		/*05*/
+#imgStore_map_bra_05
+{
+	top: 500px ;
+	left: 625px ;
+}
+
+		/*06*/
+#imgStore_map_bra_06
+{
+	top: 650px ;
+	left: 425px ;
+}
+
+		/*06*/
+#imgStore_map_mex_06
+{
+	top: 650px ;
+	left: 825px ;
+}
+
+
+
+
+/*Logo P&G*/
+.imgLogo_PG
+{
+	position: absolute ;	
+	z-index: 2 ;
+}
+
+	/*Brasil*/
+		/*01*/
+#imgLogo_PG_01
+{
+	top: 345px ;
+	left: 425px ;
+}
+
+		/*02*/
+#imgLogo_PG_02
+{
+	top: 375px ;
+	left: 740px ;
+}
+
+		/*03*/
+#imgLogo_PG_03
+{
+	top: 520px ;
+	left: 530px ;
+}
+
+		/*04*/
+#imgLogo_PG_04
+{
+	top: 525px ;
+	left: 875px ;
+}
+
+		/*05*/
+#imgLogo_PG_05
+{
+	top: 575px ;
+	left: 700px ;
+}
+
+		/*06*/
+#imgLogo_PG_06
+{
+	top: 725px ;
+	left: 500px ;
+}
+
+		/*06 mex*/
+#imgLogo_PG_06_mex
+{
+	top: 725px ;
+	left: 900px ;
+}
+
+
+
+
+/*Flechas dobles*/
+.img_dobleArrow
+{
+	position: absolute ;	
+	z-index: 3 ;
+}
+
+	/*Brasil*/
+		/*01*/
+#img_dobleArrow_01
+{
+	top: 495px ;
+	left: 415px ;
+}
+
+		/*02*/
+#img_dobleArrow_02
+{
+	top: 495px ;
+	left: 770px ;
+}
+
+		/*03*/
+#img_dobleArrow_03
+{
+	top: 685px ;
+	left: 385px ;
+}
+
+		/*03 mex*/
+#img_dobleArrow_03_mex
+{
+	top: 685px ;
+	left: 785px ;
+}
+
+/*ImgPortafolio*/
+.imgPortafolio_distribucion
+{
+	position: absolute ;
+	
+	top: 475px ;
+	left: 102.5px ;
+	
+	width: 1075px ;
+	height: 0px ;
+	
+	overflow: hidden ;
+}
+
+
+
+/************Anaquel**************/
+/*BackImage_Anaquel*/
+.BackImage_Anaquel
+{
+	position: absolute ;
+	top: 0px ;
+	left:15px ;
+	
+	width: 875px ;
+	height: 480px ;
+	
+	border-radius: 20px ;
+	-webkit-border-radius: 20px ;
+	-moz-border-radius: 20px ;
+	
+	overflow: hidden ;
+	
+	z-index: 2 ;	
+}
+
+/*BackImage Counter*/
+.BackImage_Counter
+{
+	position: absolute ;
+	top: 0px ;
+	left:15px ;
+	
+	width: 875px ;
+	height: 480px ;
+	
+	border-radius: 20px ;
+	-webkit-border-radius: 20px ;
+	-moz-border-radius: 20px ;
+	
+	overflow: hidden ;
+	
+	z-index: 2 ;	
+}
+
+
+.imageCounter
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 200px ;
+}
+
+	/*BackImage_Anaquel img*/
+.BackImage_Anaquel img
+{
+	position: absolute ;
+	
+	top: 0px ;
+	
+	left:500px ;
+	
+	opacity: 0 ;
+}
+
+/*Image Merchandising*/
+.BackImage_Merchandising_all
+{
+	position: absolute ;
+	
+	top: 0px ;
+	
+	left:15px ;
+}
+
+/*Buttons*/
+	/*01*/
+#merch_btn_01
+{
+	position: absolute ;
+	
+	top: 775px ;
+	left: 350px ; 
+}
+
+	/*02*/
+#merch_btn_02
+{
+	position: absolute ;
+	
+	top: 775px ;
+	left: 550px ; 
+}
+
+	/*03*/
+#merch_btn_03
+{
+	position: absolute ;
+	
+	top: 775px ;
+	left: 750px ; 
+}
+
+
+/*Yellow Box*/
+.yellowBox
+{
+	position: absolute ;
+	
+	background: rgba(250,170,45,.65) ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+	
+	z-index: 2 ;
+}
+
+
+
+/*Anaquel*/
+.img_overAnaquel
+{
+	position: absolute ;
+	
+	top: 250px ;
+	left: 200px ;
+	
+	border-radius: 25px ;
+	-moz-border-radius: 25px ;
+	-webkit-border-radius: 25px ;
+	
+	overflow: hidden ;
+}
+
+
+
+/*Counter*/
+/*Mexico*/
+	/*Counter 01*/
+#yellowBox_counter_01_mex
+{
+	top: 340px ;
+	left: 440px ;
+	
+	width: 375px ;
+	height: 210px ;
+}
+
+	/*Counter 02*/
+#yellowBox_counter_02_mex
+{
+	top: 330px ;
+	left: 425px ;
+	
+	width: 415px ;
+	height: 215px ;
+}
+
+	/*Counter 03*/
+#yellowBox_counter_03_mex
+{
+	top: 330px ;
+	left: 445px ;
+	
+	width: 370px ;
+	height: 215px ;
+}
+
+	/*Counter 04*/
+#yellowBox_counter_04_mex
+{
+	top: 310px ;
+	left: 455px ;
+	
+	width: 370px ;
+	height: 215px ;
+}
+
+
+
+/*Brasil*/
+	/*Counter 01*/
+#yellowBox_counter_01
+{
+	top: 330px ;
+	left: 375px ;
+	
+	width: 475px ;
+	height: 290px ;
+}
+
+	/*Counter 02*/
+#yellowBox_counter_02
+{
+	top: 330px ;
+	left: 425px ;
+	
+	width: 415px ;
+	height: 215px ;
+}
+
+	/*Counter 03*/
+#yellowBox_counter_03
+{
+	top: 330px ;
+	left: 445px ;
+	
+	width: 370px ;
+	height: 215px ;
+}
+
+
+/************Mercadeo**************/
+/*Mercadeo Image*/
+.merchandisingImage
+{
+	position: absolute ;
+	
+	z-index: 2 ;
+}
+
+	/*01*/
+#merchandisingImage_s1_01
+{
+	top: 425px ;
+	left: 875px ;
+}
+
+	/*02*/
+#merchandisingImage_s1_02
+{
+	top: 275px ;
+	left: 225px ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+}
+
+	/*03*/
+#merchandisingImage_s1_03
+{
+	top: 300px ;
+	left: 525px ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+}
+
+	/*04*/
+#merchandisingImage_s1_04
+{
+	top: 475px ;
+	left: 325px ;
+	
+	box-shadow: 0px 0px 10px #000000 ;
+	-moz-box-shadow: 0px 0px 10px #000000 ;
+	-webkit-box-shadow: 0px 0px 10px #000000 ;
+}
+
+
+
+/*Anaquel Menu*/
+.btn_circle
+{
+	position: absolute ;
+	z-index: 2 ;
+}
+
+	/*Mexico*/
+		/*PeptoBismol*/
+#btn_circle_anaquel_peptoBismol_mex
+{
+	top: 350px ;
+	left: 275px ;
+}
+
+		/*Metamucil*/
+#btn_circle_anaquel_metamucil_mex
+{
+	top: 400px ;
+	left: 475px ;
+}
+
+		/*Vicks*/
+#btn_circle_anaquel_vicks_mex
+{
+	top: 350px ;
+	left: 675px ;
+}
+
+		/*Clearblue*/
+#btn_circle_anaquel_clearblue_mex
+{
+	top: 400px ;
+	left: 875px ;
+}
+
+
+
+
+
+/*Brasil*/
+	/*Metamucil*/
+#btn_circle_anaquel_metamucil
+{
+	top: 350px ;
+	left: 275px ;
+}
+
+	/*Hipoglos*/
+#btn_circle_anaquel_hipoglos
+{
+	top: 400px ;
+	left: 500px ;
+}
+
+	/*Vicks*/
+#btn_circle_anaquel_vicks
+{
+	top: 350px ;
+	left: 875px ;
+}
+
+
+
+
+/*Rectangle Buttons*/
+.btn_rectangle_fundamentales
+{
+	position: absolute ;
+	
+	padding: 10px ;
+	
+	width: 100px ;
+	height: 30px ;
+	
+	font-size: .85em ;
+	text-align: center ;
+	
+	opacity: 0 ;
+	
+	color: #FFF ;
+	
+	background: rgba(30,33,38,1) ;
+	
+	z-index: 3 ;
+}
+
+
+/*Metamucil Brasil*/
+	/*Gondola*/
+#rectangle_gondola_metamucil
+{
+	top: 450px ;
+	left: 215px ;
+}
+
+	/*Visibilidad*/
+#rectangle_visibilidad_metamucil
+{
+	top: 450px ;
+	left: 340px ;
+}
+
+
+
+/*peptoBismol Mexico*/
+	/*Gondola*/
+#rectangle_gondola_pepto_mex
+{
+	top: 450px ;
+	left: 210px ;
+}
+
+	/*Visibilidad*/
+#rectangle_visibilidad_pepto_mex
+{
+	top: 450px ;
+	left: 335px ;
+}
+
+
+/*Metamucil Mexico*/
+	/*Gondola*/
+#rectangle_gondola_metamucil_mex
+{
+	top: 500px ;
+	left: 410px ;
+}
+
+	/*Visibilidad*/
+#rectangle_visibilidad_metamucil_mex
+{
+	top: 500px ;
+	left: 535px ;
+}
+
+
+/*Hipoglos*/
+	/*Gondola*/
+#rectangle_gondola_hipoglos
+{
+	top: 500px ;
+	left: 440px ;
+}
+
+	/*Visibilidad*/
+#rectangle_visibilidad_hipoglos
+{
+	top: 500px ;
+	left: 565px ;
+}
+
+
+/*Vicks México*/
+	/*Gondola*/
+#rectangle_gondola_vicks_mex
+{
+	top: 450px ;
+	left: 610px ;
+}
+
+	/*Visibilidad*/
+#rectangle_visibilidad_vicks_mex
+{
+	top: 450px ;
+	left: 735px ;
+}
+
+
+/*Vicks Brasil*/
+	/*Gondola*/
+#rectangle_gondola_vicks
+{
+	top: 450px ;
+	left: 810px ;
+}
+
+	/*Visibilidad*/
+#rectangle_visibilidad_vicks
+{
+	top: 450px ;
+	left: 935px ;
+}
+
+
+/*Clearblue Brasil*/
+	/*Gondola*/
+#rectangle_gondola_clearblue_mex
+{
+	top: 500px ;
+	left: 810px ;
+}
+
+	/*Visibilidad*/
+#rectangle_visibilidad_clearblue_mex
+{
+	top: 500px ;
+	left: 935px ;
+}
+
+
+
+
+
+/*Fundamentales Mercadeo Upper Images*/
+/*Image Container*/
+.topImageContainer
+{
+	position: absolute ;
+	
+	top: 160px ;
+	left: 95px ;
+		
+	width: 1090px ;
+	height: 615px ;
+	
+	overflow: hidden ;
+	
+	z-index: 5 ;
+}
+
+/*Materiales de Visibilidad*/
+.imageVisibilidade
+{
+	position: absolute ;
+	
+	z-index: 1 ;
+}
+
+/*Metamucil*/
+	/*01*/
+#imageVisibilidade_metamucil_01
+{
+	top: 250px ;
+	left: 100px ;
+}
+
+	/*02*/
+#imageVisibilidade_metamucil_02
+{
+	top: 150px ;
+	left: 550px ;
+}
+
+	/*03*/
+#imageVisibilidade_metamucil_03
+{
+	top: 450px ;
+	left: 850px ;
+}
+
+
+/*Hipoglos*/
+	/*01*/
+#imageVisibilidade_hipoglos_01
+{
+	top: 250px ;
+	left: 150px ;
+}
+
+	/*02*/
+#imageVisibilidade_hipoglos_02
+{
+	top: 250px ;
+	left: 650px ;
+}
+
+	/*03*/
+#imageVisibilidade_hipoglos_03
+{
+	top: 500px ;
+	left: 600px ;
+}
+
+/*Vicks*/
+	/*01*/
+#imageVisibilidade_vicks_01
+{
+	top: 250px ;
+	left: 100px ;
+}
+
+	/*02*/
+#imageVisibilidade_vicks_02
+{
+	top: 350px ;
+	left: 525px ;
+}
+
+	/*03*/
+#imageVisibilidade_vicks_03
+{
+	top: 250px ;
+	left: 900px ;
+}
+
+
+/************Precio**************/
+/*Yellow box precio*/
+#yellowBox_precio_01
+{
+	top: 555px ;
+	left: 325px ;
+	
+	width: 40px ;
+	height: 20px ;
+}
+
+/*Precio Girl*/
+.precioGirl
+{
+	position: absolute ;
+	
+	top: 370px ;
+	left: 650px ;
+	
+	z-index: 2 ;
+}
+
+/*Precio Image*/
+.precioImage
+{
+	position: absolute ;
+	
+	top: 450px ;
+	left: 375px ;
+	
+	box-shadow: 0px 0px 5px #000000 ;
+	-moz-box-shadow: 0px 0px 5px #000000 ;
+	-webkit-box-shadow: 0px 0px 5px #000000 ;
+	
+	z-index: 2 ;
+}
+
+
+/*Precio Estrategia*/
+.precioEstrategia
+{
+	position: absolute ;
+	
+	z-index: 1 ;
+}
+
+	/*01*/
+#precioEstrategia_01
+{
+	top: 600px ;
+	left: 500px ;
+}
+
+	/*02*/
+#precioEstrategia_02
+{
+	top: 575px ;
+	left: 175px ;
+}
+
+	/*03*/
+#precioEstrategia_03
+{
+	top: 450px ;
+	left: 225px ;
+}
+
+	/*04*/
+#precioEstrategia_04
+{
+	top: 300px ;
+	left: 350px ;
+}
+
+	/*05*/
+#precioEstrategia_05
+{
+	top: 300px ;
+	left: 650px ;
+}
+
+	/*06*/
+#precioEstrategia_06
+{
+	top: 450px ;
+	left: 775px ;
+}
+
+	/*07*/
+#precioEstrategia_07
+{
+	top: 575px ;
+	left: 825px ;
+}
+
+
+
+/**********************************************
+Técnicas de Ventas
+***********************************************/
+/***********
+Objeciones
+***********/
+/************Slide 01**************/
+
+	/*01*/
+#all_leftText_objeciones_s1_01
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 250px ;
+	left: 150px ;
+}
+
+	/*02*/
+#all_leftText_objeciones_s1_02
+{
+	position: absolute ;
+	
+	width: 375px ;
+	
+	top: 295px ;
+	left: 175px ;
+}
+
+	/*03*/
+#all_leftText_objeciones_s1_03
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 525px ;
+	left: 150px ;
+}
+
+	/*04*/
+#all_leftText_objeciones_s1_04
+{
+	position: absolute ;
+	
+	width: 375px ;
+	
+	top: 625px ;
+	left: 150px ;
+}
+
+	/*05*/
+#all_leftText_objeciones_s1_05
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 250px ;
+	left: 700px ;
+}
+
+	/*06*/
+#all_leftText_objeciones_s1_06
+{
+	position: absolute ;
+	
+	width: 375px ;
+	
+	top: 460px ;
+	left: 725px ;
+}
+
+/***********
+Conocimiento profundo del cliente
+***********/
+/************Slide 01**************/
+	/*01*/
+#all_leftText_conocimientoProfundo_s1_01
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 250px ;
+	left: 150px ;
+}
+
+	/*02*/
+#all_leftText_conocimientoProfundo_s1_02
+{
+	position: absolute ;
+	
+	width: 375px ;
+	
+	top: 300px ;
+	left: 175px ;
+}
+
+	/*03*/
+#all_leftText_conocimientoProfundo_s1_03
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 475px ;
+	left: 150px ;
+}
+
+	/*04*/
+#all_leftText_conocimientoProfundo_s1_04
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 525px ;
+	left: 175px ;
+}
+
+
+/***********
+Presentación Eficaz
+***********/
+/************Slide 01**************/
+	/*01*/
+#all_leftText_presentacionEficaz_s1_01
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_presentacionEficaz_s1_02
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 365px ;
+}
+
+	/*03*/
+#all_leftText_presentacionEficaz_s1_03
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 450px ;
+}
+
+	/*04*/
+#all_leftText_presentacionEficaz_s1_04
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 515px ;
+}
+
+/************Slide 02**************/
+	/*01*/
+#all_leftText_presentacionEficaz_s2_01
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_presentacionEficaz_s2_02
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 300px ;
+}
+
+	/*03*/
+#all_leftText_presentacionEficaz_s2_03
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 550px ;
+}
+
+/************Slide 03**************/
+	/*01*/
+#all_leftText_presentacionEficaz_s3_01
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_presentacionEficaz_s3_02
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 290px ;
+}
+
+	/*03*/
+#all_leftText_presentacionEficaz_s3_03
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 375px ;
+}
+
+/************Slide 05**************/
+	/*01*/
+#all_leftText_presentacionEficaz_s5_01
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_presentacionEficaz_s5_02
+{
+	position: absolute ;
+	
+	width: 400px ;
+	
+	top: 350px ;
+}
+
+
+/***********
+Liderazgo
+***********/
+/************Slide 01**************/
+	/*01*/
+#all_leftText_liderazgo_s1_01
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_liderazgo_s1_02
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 425px ;
+}
+
+	/*03*/
+#all_leftText_liderazgo_s1_03
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 550px ;
+}
+
+	/*04*/
+#all_leftText_liderazgo_s1_04
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 750px ;
+}
+
+/************Slide 02**************/
+	/*01*/
+#all_leftText_liderazgo_s2_01
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_liderazgo_s2_02
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 300px ;
+}
+
+/************Slide 03**************/
+	/*01*/
+#all_leftText_liderazgo_s3_01
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_liderazgo_s3_02
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 400px ;
+}
+
+/************Slide 04**************/
+	/*01*/
+#all_leftText_liderazgo_s4_01
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_liderazgo_s4_02
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 290px ;
+}
+
+	/*03*/
+#all_leftText_liderazgo_s4_03
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 380px ;
+}
+
+	/*04*/
+#all_leftText_liderazgo_s4_04
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 420px ;
+}
+
+	/*05*/
+#all_leftText_liderazgo_s4_05
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 460px ;
+}
+
+	/*06*/
+#all_leftText_liderazgo_s4_06
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 510px ;
+}
+
+	/*07*/
+#all_leftText_liderazgo_s4_07
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 550px ;
+}
+
+	/*08*/
+#all_leftText_liderazgo_s4_08
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 595px ;
+}
+
+	/*09*/
+#all_leftText_liderazgo_s4_09
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 630px ;
+}
+
+	/*10*/
+#all_leftText_liderazgo_s4_10
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 700px ;
+}
+
+	/*11*/
+#all_leftText_liderazgo_s4_11
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 740px ;
+}
+
+/*Rectangle button*/
+#rectangle_liderazgo_feedback
+{
+	top: 475px ;
+	left: 100px ;
+}
+
+/************Slide 05**************/
+/*Rectangle buttons*/
+	/*01*/
+#rectangle_liderazgo_Ciclo_01
+{
+	width: 115px ;
+	height: 50px ;
+	
+	top: 225px ;
+	left: 565px ;
+	
+	font-size: .85em ;
+	text-align: center ;
+}
+
+	/*02*/
+#rectangle_liderazgo_Ciclo_02
+{
+	width: 115px ;
+	height: 50px ;
+	
+	top: 375px ;
+	left: 715px ;
+	
+	font-size: .85em ;
+	text-align: center ;
+}
+
+	/*03*/
+#rectangle_liderazgo_Ciclo_03
+{
+	width: 115px ;
+	height: 50px ;
+	
+	top: 510px ;
+	left: 565px ;
+	
+	font-size: .85em ;
+	text-align: center ;
+}
+
+	/*04*/
+#rectangle_liderazgo_Ciclo_04
+{
+	width: 115px ;
+	height: 50px ;
+	
+	top: 375px ;
+	left: 415px ;
+	
+	font-size: .85em ;
+	text-align: center ;
+}
+
+
+/*Bottom text*/
+.liderazo_txt_bottom
+{
+	position: absolute ;
+	
+	top: 625px ;
+	left: 50px ;
+	
+	width: 1180px ;
+
+	font-size: 1.25em ;
+	text-align: center ;
+}
+
+/*Bullets*/
+	/*01*/
+.liderazgo_txt_bottom_bullet_01
+{
+	position: absolute ;
+	
+	top: 700px ;
+	left: 150px ;
+
+	font-size: 1.25em ;
+	text-align: left ;
+}
+
+	/*02*/
+.liderazgo_txt_bottom_bullet_02
+{
+	position: absolute ;
+	
+	top: 700px ;
+	left: 550px ;
+
+	font-size: 1.25em ;
+	text-align: left ;
+}
+
+	/*03*/
+.liderazgo_txt_bottom_bullet_03
+{
+	position: absolute ;
+	
+	top: 700px ;
+	left: 950px ;
+
+	font-size: 1.25em ;
+	text-align: left ;
+}
+
+
+/************Slide 06**************/
+	/*01*/
+#all_leftText_liderazgo_s6_01
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_liderazgo_s6_02
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 350px ;
+}
+
+/************Slide 07**************/
+	/*01*/
+#all_leftText_liderazgo_s7_01
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_liderazgo_s7_02
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 350px ;
+}
+
+	/*03*/
+#all_leftText_liderazgo_s7_03
+{
+	position: absolute ;
+	
+	width: 550px ;
+	
+	top: 475px ;
+}
+
+/************Slide 08**************/
+	/*01*/
+#all_leftText_liderazgo_s8_01
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 250px ;
+}
+
+	/*02*/
+#all_leftText_liderazgo_s8_02
+{
+	position: absolute ;
+	
+	width: 450px ;
+	
+	top: 425px ;
+}
+
+
+/************Add Style Generic Fonts for java**************/
+	/*01*/
+.VAGRounded_Bold
+{
+	font-family: VAGRoundedBold;
+}
+
+	/*02*/
+.VAGRounded_Light
+{
+	font-family: VAGRoundedLight;
+}
+
+
+	/*01*/
+.Olivea_Bold
+{
+	font-family: OliveaBold;
+}
+
+	/*02*/
+.Olivea_Light
+{
+	font-family: OliveaLight;
+}
+

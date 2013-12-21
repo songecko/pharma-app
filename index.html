@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<!--General Styleshhet-->
+<link rel="stylesheet" media="screen" href="css/general.css" />
+
+<!--TwenMax animation Plugin!-->
+<script src="js/TweenMax.min.js" ></script>
+<script src="js/TimelineMax.min.js"></script>
+<script src="js/easing/EasePack.min.js"></script>
+
+<!--jQuery-->
+<script src="js/jQuery/jquery.min.js"></script>
+
+<!--Draggabilly-->
+<script src="js/draggabilly.js"></script>
+
+<!--bumpbox-->
+<script src="js/bumpbox/bumpbox-2.0.1.js"></script>
+<script src="js/bumpbox/flowplayer.min.js"></script>
+<script src="js/bumpbox/mootools.js"></script>
+
+<!--Page Loaders-->
+<script src="html/documentReady.js"></script>
+
+<!--Animacion-->
+<script src="js/animation.js"></script>
+
+<!--Main Load-->
+<!--<script src="html/coversheet.js"></script>-->
+<script src="html/Induccion/menu_Herramientas.js"></script>
+
+<!--Autoadjust page-height-->
+<script type='text/javascript'>
+	//<![CDATA[
+	
+	$(document).ready(function(){
+	
+		function simularFullscreen()
+		{
+			screenWidth = $(window).width();
+			screenHeight = $(window).height();
+			
+			ratio = 0;
+
+			if (screenWidth/screenHeight > ratio)
+			{
+				TweenMax.to($('#PageWrap') , 0.75, { scale:(screenHeight/960) });
+				TweenMax.to($('#PageWrap') , 0.75, { y:0, });
+			}
+
+			if ($('#PageWrap').width() > 0)
+			{
+				TweenMax.to($('#PageWrap'), 0.8, { x:((screenWidth-640)/640)});
+				TweenMax.to($('#PageWrap'), 0.8, { y:((screenHeight-480)/480) });
+			}
+		}
+			
+		simularFullscreen();
+		
+		$(window).bind("resize", function() {
+			simularFullscreen();
+		});
+	
+	});
+
+	//]]>
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Pharma LATAM | End to End Platform</title>
+
+</head>
+
+<body>
+
+    <!--PageWrap-->
+	<div class="PageWrap" id="PageWrap">
+    	
+       	<!--Main Container-->
+        <div class="Container" id="Container"></div>
+
+        <!--Menu Caller-->
+        <div class='MenuCaller' id='MenuCaller' onmouseover="menuRollOver()" onclick="menuClick()"><img src='img/img_callMenu.png'/></div>
+
+        	<!--Menu Container-->
+            <div class="contextualMenu" id="contextualMenu"></div>
+        
+        <!--Audios-->
+            <!--Audio Show/Hide-->
+        <div class="AudioCall" id="AudioCall" onmouseover="audioRollOver()" onclick="audioClick()">
+            <!--Image-->
+            <div id="img_AudioCall">
+                <img src="img/img_iconPharma.png" height="40"/>
+            </div>
+        </div>
+        
+        <!--Audios Buttons-->
+            <!--Background audio-->
+        <div class='backgroundAudio' id='backgroundAudio' onmouseover="backgroundRollOver()" onclick="changeBackAudio()">
+            <img src="img/img_auBack_On.png" id="auBackground"/>
+        </div>
+            
+            <!--Locution audio-->
+        <div class='locutionAudio' id='locutionAudio' onmouseover="locutionRollOver()" onclick="changeAudio()">
+            <img src="img/img_auLocucion_On.png" id="auMyLocution" />
+        </div>
+            
+        <!--Audio loading and looping-->
+            <!--Background Audio-->
+        <audio src="audio/bg1.mp3" autoplay="true" id="bgAudio" loop="loop">
+            <script>
+                document.getElementById("bgAudio").volume = ".5" ;
+            </script>
+        </audio>
+        
+            <!--Locution-->
+            <audio id="auLocucion"></audio>
+
+        <!--Highly Restricted-->
+        <div class="Restricted" id="Restricted">highly restricted</div>
+
+        <!--Gradient Background-->
+        <div class="backGradient" id="imgContainer"><img src="img/img_back_clearblue.png" id="backGradient" /></div>
+
+    </div>
+    
+</body>
+
+</html>
+
+<!--Audio play and stop-->
+<script>                    
+	var auFlagLoc = 1 ;
+	var auFlagBack = 1 ;
+	
+	document.getElementById("auLocucion").volume = "1" ;
+
+	//Change Audio
+		//Locution
+	function changeAudio()
+	{
+		if( ( auFlagLoc % 2 ) == 0)
+		{
+			document.getElementById("auLocucion").play() ;
+			
+			document.getElementById("auMyLocution").src = "img/img_auLocucion_On.png" ;
+			
+			audioClick();
+		}
+		
+		else
+		{
+			document.getElementById("auLocucion").pause() ;
+			
+			document.getElementById("auMyLocution").src = "img/img_auLocucion_Off.png" ;
+			
+			audioClick() ;
+		}
+		auFlagLoc++ ;
+	}
+	
+		//Background
+	function changeBackAudio()
+	{
+		if( ( auFlagBack % 2 ) == 0)
+		{
+			document.getElementById("bgAudio").play() ;
+			document.getElementById("auBackground").src = "img/img_auBack_On.png" ;
+			
+			audioClick() ;
+		}
+		
+		else
+		{
+			document.getElementById("bgAudio").pause() ;
+			
+			document.getElementById("auBackground").src = "img/img_auBack_Off.png" ;
+			
+			audioClick() ;
+		}
+		auFlagBack++ ;
+	}
+	
+</script>
+
+<!--Variable declaration-->
+<script>
+	var audioCalling = 0 ;
+	var languageCountry = 1 ;
+	var pagChange = 0 ;
+	var rolSelection = 5 ;
+	var gotoSlide = '' ;
+	var fundamentalesPosition = 0 ;
+	var matVisibilidadPosition = 0 ;
+</script>
+
+
