@@ -325,7 +325,7 @@ function info_marca_03C()
 			***********************************************/
 			var auLocucion = document.getElementById("auLocucion") ;
 			
-			auLocucion.src = 'audio/marcas_mx/clearblue/au_infoMarca_planificaciónBB_mx.mp3' ;
+			auLocucion.src = 'audio/marcas_mx/clearblue/au_infoMarca_planificacionBB_mx.mp3' ;
 			
 			if (( auFlagLoc % 2 ) != 0)
 			{
